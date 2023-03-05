@@ -2,4 +2,13 @@
     .color-logo {
         color: #FDAC53 ;
     }
+    .btn0{
+        color: #212529;
+        background-color: #FDAC53;
+        border-color: #FDAC53;
+        font-weight: 600 !important;
+        padding:0.5em 0.8em;
+        cursor: pointer;
+        /* margin-top:1em; */
+    }
 }

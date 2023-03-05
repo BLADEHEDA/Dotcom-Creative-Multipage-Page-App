@@ -1,0 +1,24 @@
+@media only screen and (min-width:375px){
+ .mainbar-div{
+     height: 40vh; 
+    background-color: #eee;
+    background-color: orange;
+    background-position: center;
+    background-size: cover;
+    border: solid 1px black;
+    
+    animation: image 5s infinite alternate;
+  }
+  
+  @keyframes image {
+    0% {
+      background-image: url('../images/carousel-1.jpg');
+    }
+    50% {
+        background-image: url('../images/carousel-2.jpg');
+      }
+    100% {
+      background-image: url('../images/carousel-3.jpg');
+    }
+  }
+}
