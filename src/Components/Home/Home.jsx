@@ -1,4 +1,5 @@
 import React from 'react'
+import Info from './Info'
 import Mainbar from './Mainbar'
 import Provider from './Provider'
 
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <Mainbar/>
       <Provider/>
+      <Info/>
     </div>
   )
 }
