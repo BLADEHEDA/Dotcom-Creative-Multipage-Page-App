@@ -16,7 +16,7 @@ const InfoProp = (props) => {
 
 const Info = () => {
   return (
-    <div className='Info mx-[2em] mb-[3em]'>
+    <div className='Info mx-[2em] mb-[3em] '>
       <InfoProp head="Our Office" content="123 Street, New York, USA " 
       icon={ <FontAwesomeIcon className='h-[2em] text-[#FDAC53] bg-[#fff] ' icon={faMapMarkerAlt}/>}
       />

@@ -2,6 +2,7 @@ import React from 'react'
 import Info from './Info'
 import Mainbar from './Mainbar'
 import Provider from './Provider'
+import Services from './Services'
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <Mainbar/>
       <Provider/>
       <Info/>
+      <Services/>
     </div>
   )
 }
