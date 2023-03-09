@@ -1,14 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarker,faEnvelopeOpen,faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt,faEnvelopeOpen,faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const InfoProp = (props) => {
-    return (
-      <div className='InfoProp'>
-        <div className="infoprop-left"> {props.icon}</div>
+    return ( 
+      <div className='InfoProp flex mb-[1em] p-[1.5em]  '>
+        <div className="infoprop-left mt-[0.65em] mr-[1em]"> {props.icon}</div>
         <div className="infoprop-right">
-            <p className="content-head">{props.head }</p>
-            <p className="content-body">{props.content }</p>
+            <p className="content-head text-[#131313] font-[600] text-[1.3em] ">{props.head }</p>
+            <p className="content-body text-[#4A4A4A] ">{props.content }</p>
         </div>
       </div>
     )  
@@ -16,11 +16,14 @@ const InfoProp = (props) => {
 
 const Info = () => {
   return (
-    <div className='Info'>
+    <div className='Info mx-[2em] mb-[3em]'>
       <InfoProp head="Our Office" content="123 Street, New York, USA " 
+      icon={ <FontAwesomeIcon className='h-[2em] text-[#FDAC53] bg-[#fff] ' icon={faMapMarkerAlt}/>}
       />
-      <InfoProp head="Email Us" content="nfo@example.com" />
-      <InfoProp head="OCall us" content="+012 345 6789"  />
+      <InfoProp head="Email Us" content="nfo@example.com"
+        icon={ <FontAwesomeIcon className='h-[2em] text-[#FDAC53] bg-[#fff] ' icon={faEnvelopeOpen}/>} />
+      <InfoProp head="Call us" content="+012 345 6789"
+        icon={ <FontAwesomeIcon className='h-[2em] text-[#FDAC53] bg-[#fff] ' icon={faPhone}/>} />  
     </div>
   )
 }
