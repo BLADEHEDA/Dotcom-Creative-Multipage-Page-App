@@ -21,11 +21,11 @@ const ServicesProp = (props) => {
 const Services = () => {
   return (
     <main className='Services mx-[2em] mt-[7em]'>
-       <p className="services-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[35%] mb-[1em] ">WHAT WE DO</p>
+       <p className="services-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[7em] mb-[1em] ">WHAT WE DO</p>
        <h1 className="services-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7">
        We Offer Creative Services</h1>
-       <div className="provider-content text-[1.5em] mb-[0.5em] text-[#6c757d] leading-6">Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam,
-        est erat lorem. Est magna sea clita diam tempor elitr </div>
+       <p className="provider-content text-[1.5em] mb-[0.5em] text-[#6c757d] leading-6">Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam,
+        est erat lorem. Est magna sea clita diam tempor elitr </p>
         <div className="provider-btn"><Button style={{marginTop:"1em" }} name="Discover More"/>  </div>
 
      <section className="services-courses mt-[2.5em]">

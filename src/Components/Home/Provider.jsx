@@ -8,7 +8,7 @@ const Provider = () => {
     <main className='Provider mx-[2em] mb-[2em]'>
       <div className="image-div mt-[6em] p-[1em] mb-[3em]">
          <img src={about} alt="about-img" className="img-content" /> </div>
-         <p className="prov-content bg-[#FDAC53] text-[#fff] text-[15px] w-[35%] mb-[1em] ">WHO WE ARE</p>
+         <p className="prov-content bg-[#FDAC53] text-[#fff] text-[15px] w-[7em] mb-[1em] ">WHO WE ARE</p>
          <h1 className="provider-head text-[1.7rem] mb-[1em] text-[#131313] font-[900] leading-7">
             Most Effective Creative Service Provider For Companies</h1>
       <div className="provider-content leading-6">Eirmod est dolor nonumy sea amet dolore erat sit dolor

@@ -1,4 +1,5 @@
 import React from 'react'
+import Experience from './Experience'
 import Info from './Info'
 import Mainbar from './Mainbar'
 import Provider from './Provider'
@@ -12,6 +13,7 @@ const Home = () => {
       <Provider/>
       <Info/>
       <Services/>
+      <Experience/>
     </div>
   )
 }
