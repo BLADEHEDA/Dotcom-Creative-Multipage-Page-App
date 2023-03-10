@@ -3,6 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import Button from '../Shared/Button'
 
+const ExperienceProp = (props) => {
+  return ( 
+    <div className='ExperienceProp  my-[2.5em]  text-center '>
+          <p className="content-head text-[#131313] font-[600] text-[2.5em] text-[#FDAC53] ">{props.figure }</p>
+          <p className="content-body  mb-[1em] font-[600] text-[1.25em] ">{props.content }</p>
+    </div>
+  )  
+}
+
 const Experience = () => {
   return (
     <main className='Experience mx-[2em] mt-[7em]'>
@@ -31,6 +40,12 @@ const Experience = () => {
             </div>
            </section>
            <div className="experience-ntn"><Button style={{marginTop:"1em" }} name="Learn More"/>  </div>
+           <section className="figures">
+            <ExperienceProp figure="25" content="Years Expereince" />
+            <ExperienceProp figure="225" content="SKilled Experts" />
+            <ExperienceProp figure="1050" content="Happy Clients" />
+            <ExperienceProp figure="2500" content="Complete Projects" />
+           </section>
           
     </main>
   )
