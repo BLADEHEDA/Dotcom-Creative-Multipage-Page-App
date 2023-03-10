@@ -22,9 +22,13 @@
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
-.InfoProp,.ExperienceProp,.Teamprop{
+.InfoProp,.ExperienceProp,.Teamprop,.PriceProp{
   border:  1px solid #dee2e6;
 }
+.services{
+  font-family: "Raleway", sans-serif;
+}
+
 
 
 }

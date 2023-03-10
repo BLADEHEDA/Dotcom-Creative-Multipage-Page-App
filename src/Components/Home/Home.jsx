@@ -2,6 +2,7 @@ import React from 'react'
 import Experience from './Experience'
 import Info from './Info'
 import Mainbar from './Mainbar'
+import Pricing from './Pricing'
 import Provider from './Provider'
 import Services from './Services'
 import Team from './Team'
@@ -16,6 +17,7 @@ const Home = () => {
       <Services/>
       <Experience/>
       <Team/>
+      <Pricing/>
     </div>
   )
 }
