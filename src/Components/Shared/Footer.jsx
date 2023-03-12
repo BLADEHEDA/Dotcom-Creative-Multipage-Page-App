@@ -30,7 +30,8 @@ const FooterContact=(props)=>{
 
 const Footer = () => {
   return (
-    <main className='Footer bg-[#131313] pt-[5em] pb-[3em] px-[1em] text-slate-100'>
+    <main className='Footer '>
+        <section className="footer-top bg-[#131313] pt-[5em] pb-[3em] px-[1em] text-slate-100">   
      <footer className="footer-one">
         <h1 className="mobile-nav-left font-[900] text-[2.1em] text-slate-100">
                 <span className="color-logo  ">D</span>ot<span className="color-logo">C</span>om
@@ -73,7 +74,14 @@ const Footer = () => {
         <FooterContact 
           icon={ <FontAwesomeIcon className='h-[1.1em] text-[#FDAC53]  ' icon={faEnvelopeOpen}/>} 
         content="info@example.com"/>
-    </footer>   
+    </footer> 
+    </section>  
+    <section className="footer-bottome">
+        <p className="footer-boottom-content text-center py-[1em] ">
+        ©<a href='/' className="color-logo">Designo-multipage</a> . All Rights Reserved. Designed by
+         <a href="https://github.com/BLADEHEDA" className="color-logo">BLADE HEDA </a> 
+        </p>
+    </section>
     </main>
   )
 }
