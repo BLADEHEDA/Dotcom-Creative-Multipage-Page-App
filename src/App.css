@@ -15,4 +15,10 @@ img{
         cursor: pointer;
         /* margin-top:1em; */
     }
+    .footer-icon{
+        border: solid 1px  #FDAC53 ;
+        border-radius: 50%;
+        padding: 0.5em 0.75em;
+        margin-right: 0.5em;
+    }
 }
