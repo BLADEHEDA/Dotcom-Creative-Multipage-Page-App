@@ -22,7 +22,7 @@ const BlogProp=(props)=>{
                 </div>
             </section>
             <section className="blogprop-section px-[2em] mt-[1.5em] ">
-                <div className="blogprop-flexed flex justify-betwee mb-[1em] ">
+                <div className="blogprop-flexed flex justify-between mb-[1em] ">
                     <div className="blogprop-item w-[15%]">
                         <img src={user1} alt="user-img " className="blogprop-icon rounded-[50%] " />
                     </div>
