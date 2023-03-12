@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <section className='Navvar'>
         <navbar className="mobile-nav flex justify-between bg-[#131313] py-[0.3em] px-[1em] lg:hidden"> 
-        <nav className="mobile-nav-left font-[900] text-[2.2em] text-slate-100">
+        <nav className="mobile-nav-left font-[900] text-[2.1em] text-slate-100">
              <span className="color-logo  ">D</span>ot<span className="color-logo">C</span>om
           </nav>
 

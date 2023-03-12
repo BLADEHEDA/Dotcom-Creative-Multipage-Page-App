@@ -1,7 +1,30 @@
 import React from 'react'
 import Button from '../Shared/Button'
+import "./Home.css"
+import testimonial1 from "../images/testimonial-1.jpg"
+import testimonial2 from "../images/testimonial-2.jpg"
+import testimonial3 from "../images/testimonial-3.jpg"
+import testimonial4 from "../images/testimonial-4.jpg"
+import testimonial5 from "../images/testimonial-5.jpg"
 
-const TestimonialProp =()=>{
+const TestimonialProp =(props)=>{
+  return(
+    <main className="TestimonialProp mb-[2em] ">
+       <div className="speech-bubble">
+          Sed ea amet kasd elitr stet nonumy, stet rebum et ipsum est duo elitr eirmod 
+          clita lorem. Dolores tempor voluptua ipsum sanctus clita
+       </div>
+       <div className="testimony-info-div flex">
+        <div className="testimony-img mr-[1.5em] w-[28%] ">
+           <img src={props.img} alt="testimony-img " className="testimony-pic rounded-[50%]" />
+           </div>
+        <div className="testimony-info mt-[1em]">
+          <p className="testimony-name mb-[3px] font-[700] ">Client Name</p>
+          <p className="testimony-profession">Profession</p>
+        </div>
+       </div>
+    </main>
+  )
 
 }
 
@@ -16,7 +39,13 @@ const Testimonial = () => {
       Lorem ut kasd elitr sed est duo ea ipsum justo diam, est erat lorem clita diam elitr</p>
        <div className="Testimonial-ntn"><Button style={{marginTop:"1em" }} name="Submit Review"/>  </div>
        </section>
-       <section className="Testimonial-bottom">   </section>
+       <section className="Testimonial-bottom"> 
+      <TestimonialProp img={testimonial1}/>
+      <TestimonialProp img={testimonial2}/>
+      <TestimonialProp img={testimonial3}/>
+      <TestimonialProp img={testimonial4}/>
+      <TestimonialProp img={testimonial5}/>
+        </section>
     </main>
   )
 }
