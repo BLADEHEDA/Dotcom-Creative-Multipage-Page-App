@@ -1,4 +1,5 @@
 import React from 'react'
+import Blog from './Blog'
 import Experience from './Experience'
 import Info from './Info'
 import Mainbar from './Mainbar'
@@ -20,6 +21,7 @@ const Home = () => {
       <Team />
       <Pricing />
       <Testimonial />
+      <Blog/>
     </div>
   )
 }
