@@ -8,6 +8,7 @@ import Provider from './Provider'
 import Services from './Services'
 import Team from './Team'
 import Testimonial from './Testimonial'
+import TestimonialHover from './TestimonialHover'
 
 
 const Home = () => {

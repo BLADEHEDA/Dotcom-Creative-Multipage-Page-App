@@ -57,5 +57,11 @@
   margin-left: -15px;
 	margin-bottom: -11px;
 }
+.estimonialHover{
+  opacity: 0;
+  background: rgba(253, 172, 83, 0.7);
+  border: 15px solid #ffffff;
+  transition: .5s;
+}
 
 }
