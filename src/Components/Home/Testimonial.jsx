@@ -7,7 +7,6 @@ import testimonial2 from "../images/testimonial-2.jpg"
 import testimonial3 from "../images/testimonial-3.jpg"
 import testimonial4 from "../images/testimonial-4.jpg"
 import testimonial5 from "../images/testimonial-5.jpg"
-import TestimonialHover from './TestimonialHover'
 
 const TestimonialProp =(props)=>{
   return(
@@ -25,7 +24,6 @@ const TestimonialProp =(props)=>{
           <p className="testimony-profession">Profession</p>
         </div>
        </div>
-       <TestimonialHover/>
     </main>
   )
 

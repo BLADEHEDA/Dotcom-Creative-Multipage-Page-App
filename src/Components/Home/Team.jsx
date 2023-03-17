@@ -5,14 +5,20 @@ import team2 from "../images/team-2.jpg"
 import team3 from "../images/team-3.jpg"
 import team4 from "../images/team-4.jpg"
 import "./Home.css"
+import TestimonialHover from './TestimonialHover'
+
 
 
 const TeamProp = (props) => {
     return (
-      <main className='Teamprop  mt-[5em] text-center'>
+      <main className='Teamprop  mt-[5em] text-center relative'>
         <div className="Teamprop-img-div"> <img src={props.src} alt="Expert pic" className="teamprop-pic" /> </div>
         <div className="teamprop-name font-[600] text-[1.3em] mt-[1.2em] ">{props.name} </div>
         <div className="teamprop-profession mt-[0.5em] text-[#131313] ">  {props.profession} </div>
+        <div className="teamprop-hover-div absolute inset-0 m-[1em]">
+        <TestimonialHover/>
+        </div>
+       
       </main>
     )
   }
