@@ -40,7 +40,7 @@ const Testimonial = () => {
       Lorem ut kasd elitr sed est duo ea ipsum justo diam, est erat lorem clita diam elitr</p>
        <div className="Testimonial-ntn"><Button style={{marginTop:"1em" }} name="Submit Review"/>  </div>
        </section>
-       <section className="Testimonial-bottom"> 
+       <section className="Testimonial-bottom "> 
       <TestimonialProp img={testimonial1}/>
       <TestimonialProp img={testimonial2}/>
       <TestimonialProp img={testimonial3}/>

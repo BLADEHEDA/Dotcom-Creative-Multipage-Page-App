@@ -6,7 +6,9 @@ import Button from '../Shared/Button'
 const ExperienceProp = (props) => {
   return ( 
     <div className='ExperienceProp  my-[2.5em]  text-center '>
-          <p className="content-head text-[#131313] font-[600] text-[2.5em] text-[#FDAC53] ">{props.figure }</p>
+          <p className="content-head text-[#131313] font-[600] text-[2.5em] text-[#FDAC53] 
+           md:text-[3em] font-[800] ">
+            {props.figure }</p>
           <p className="content-body  mb-[1em] font-[600] text-[1.25em] ">{props.content }</p>
     </div>
   )  
@@ -15,7 +17,9 @@ const ExperienceProp = (props) => {
 const Experience = () => {
   return (
     <main className='Experience mx-[2em] mt-[7em]'>
-          <p className="Experience-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[8em] mb-[1em] ">WHY CHOOSE US</p>
+          <p className="Experience-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[8em] mb-[1em] 
+         md:text-[13px] ">
+            WHY CHOOSE US</p>
           <h1 className="Experience-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7">
            25 Years Expereince</h1>
           <p className="Experience-content text-[1.3em] mb-[0.5em] text-[#6c757d] leading-6">

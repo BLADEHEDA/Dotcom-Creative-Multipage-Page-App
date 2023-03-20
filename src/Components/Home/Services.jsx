@@ -28,7 +28,7 @@ const Services = () => {
         est erat lorem. Est magna sea clita diam tempor elitr </p>
         <div className="provider-btn"><Button style={{marginTop:"1em" }} name="Discover More"/>  </div>
 
-     <section className="services-courses mt-[2.5em]">
+     <section className="services-courses mt-[2.5em]  ">
      <ServicesProp head="Web Design" 
      content="Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat" 
       icon={ <FontAwesomeIcon className='h-[3.2em] text-[#FDAC53] bg-[#fff] ' icon={faLaptopCode}/>}
