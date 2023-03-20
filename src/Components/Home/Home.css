@@ -81,10 +81,13 @@
 .prov-content{
   color: #131313;
 }
-.services-courses,.figures,.pricing-top,.blog-second {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 1em; 
+@media only screen and (min-width:768px){
+  .services-courses,.figures,.pricing-top,.blog-second {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em; 
+  }
 }
+
 
 }

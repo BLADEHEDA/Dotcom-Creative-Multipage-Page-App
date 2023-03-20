@@ -30,13 +30,14 @@ const FooterContact=(props)=>{
 
 const Footer = () => {
   return (
-    <main className='Footer '>
-        <section className="footer-top bg-[#131313] pt-[5em] pb-[3em] px-[1em] text-slate-100 ">   
+    <main className='Footer'>
+        <section className="footer-top bg-[#131313] pt-[5em] pb-[3em] px-[1em] text-slate-100 
+     md:pt-[4em] px-[3em] pb-[1em] ">   
      <footer className="footer-one">
         <h1 className="mobile-nav-left font-[900] text-[2.1em] text-slate-100 md:text-[2.7em] ">
                 <span className="color-logo  ">D</span>ot<span className="color-logo">C</span>om
         </h1>
-    <p className="footer0one-content">Volup amet magna clita tempor. Tempor sea eos vero ipsum.
+    <p className="footer-one-content md:mr-[4em] ">Volup amet magna clita tempor. Tempor sea eos vero ipsum.
      Lorem lorem sit sed elitr sed kasd et</p>
      <div className="icons-div flex mt-[1em]">
         <div className="footer-icon"><FontAwesomeIcon className='h-[1em] text-[#FDAC53]  ' icon={faTwitter}/></div>
@@ -45,8 +46,9 @@ const Footer = () => {
         <div className="footer-icon"><FontAwesomeIcon className='h-[1em] text-[#FDAC53]  ' icon={faInstagram }/></div>
      </div>
      </footer>
-     <footer className="footer-two mb-[3em]">
-        <h2 className="footer-head color-logo text-[1.2em] font-[700] mb-[1em] mt-[2em] ">Quick Links</h2>
+     <footer className="footer-two mb-[3em] ">
+        <h2 className="footer-head color-logo text-[1.2em] font-[700] mb-[1em] mt-[2em] 
+        md:mt-[0em]">Quick Links</h2>
         <FooterProp text="Home" />
         <FooterProp text="About Us" />
         <FooterProp text="Services" />
@@ -55,7 +57,8 @@ const Footer = () => {
      </footer>
 
      <footer className="footer-three mb-[3em]  ">
-     <h2 className="footer-head color-logo text-[1.2em] font-[700] mb-[1em] mt-[2em] ">Popular Links</h2>
+     <h2 className="footer-head color-logo text-[1.2em] font-[700] mb-[1em] mt-[2em]
+     md:mt-[0em] ">Popular Links</h2>
         <FooterProp text="Home" />
         <FooterProp text="About Us" />
         <FooterProp text="Services" />
@@ -63,7 +66,7 @@ const Footer = () => {
         <FooterProp text="Contact Us" />
      </footer>
      <footer className="footer-four ">
-     <h2 className="footer-three-head color-logo text-[1.2em] font-[700] mb-[1em]">Get In Touch</h2>
+     <h2 className="footer-three-head color-logo text-[1.2em] font-[700] mb-[1em] md:mb-[0em] ">Get In Touch</h2>
         <p className="footer-three-content mb-[1em] ">Dolor clita stet nonumy clita diam vero, et et ipsum diam labore</p>
         <FooterContact
          icon={ <FontAwesomeIcon className='h-[1.1em] text-[#FDAC53]' icon={faMapMarkerAlt}/>}

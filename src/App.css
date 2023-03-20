@@ -21,8 +21,15 @@ img{
         padding: 0.5em 0.75em;
         margin-right: 0.5em;
     }
-    .footer-top{
-        border: solid 1px white;
-      }
+}
 
+@media only screen and (min-width:767px){
+.footer-top{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em; 
+  }
+  /* .footer-one-content{
+ border: solid 1px red;
+  } */
 }
