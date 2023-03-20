@@ -50,8 +50,10 @@ const Blog = () => {
   return (
     <main className='Blog  mx-[2em] mb-[4em] '>
         <section className="Blog-top text-center">
-        <p className="Blog-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[6em] mb-[1em] m-[auto] ">OUR Blog</p>
-      <h1 className="Blog-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7">
+        <p className="Blog-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[6em] mb-[1em] m-[auto]
+        md:text-[13px]  ">OUR Blog</p>
+      <h1 className="Blog-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7
+      md:text-[2em] font-[800] ">
       Latest From  Blog</h1>
       </section>
       <section className="blog-second">

@@ -24,16 +24,19 @@ const PriceProp = (props) => {
 
 const Pricing = () => {
   return (
-    <main className='Pricing mx-[2em] my-[5em]'>
-        <section className="pricing-top">
+    <main className='Pricing mx-[2em] my-[5em] '>
+        <section className="pricing-top  ">
         <PriceProp price="49" type="Basic"   />
         <PriceProp price="99" type="Premium"   />
         </section>
       <section className="pricing-botom">
-      <p className="pricing-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[9em] mb-[1em] ">OUR PRICING PLAN</p>
-      <h1 className="pricing-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7">
+      <p className="pricing-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[9em] mb-[1em] 
+      md:text-[13px]">OUR PRICING PLAN</p>
+      <h1 className="pricing-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7
+      md:text-[2.2em] ">
       We Offer Affordable and Flexible Packages</h1>
-      <p className="pricing-content text-[1.3em] mb-[1.25em] text-[#6c757d] leading-6">
+      <p className="pricing-content text-[1.3em] mb-[1.25em] text-[#6c757d] leading-6
+     md:text-[1.5em] ">
       Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam, est erat lorem. Est magna sea clita diam tempor elitr</p>
       <h3 className="pricing-head text-[1.25rem] mb-[0.35em] text-[#131313] font-[900] leading-7">
       Need A Custom Package?</h3>
