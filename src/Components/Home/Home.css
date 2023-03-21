@@ -81,6 +81,12 @@
 .prov-content{
   color: #131313;
 }
+.light{
+  background:rgba(253, 172, 83, 0.7) ;
+}
+.white{
+  background: white;
+}
 @media only screen and (min-width:768px){
   .services-courses,.figures,.pricing-top,.blog-second {
     display: grid;
