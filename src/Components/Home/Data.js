@@ -1,4 +1,4 @@
-const Data= [
+export const Data= [
     {
     background: require("../images/carousel-1.jpg"),
     text:"Creative Services For Brands Grow"
