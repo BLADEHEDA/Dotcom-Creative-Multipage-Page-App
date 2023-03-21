@@ -25,6 +25,12 @@ img{
 .navlink{
     padding: 1em 0em 0.75em 1em;
 }
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
 
 @media only screen and (min-width:767px){
 .footer-top{
