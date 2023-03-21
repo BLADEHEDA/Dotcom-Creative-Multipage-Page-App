@@ -16,8 +16,8 @@ const NavBar = () => {
             <FontAwesomeIcon className='h-[1.75em] text-slate-300' icon={faBars }/></button>  
         </nav>
        </navbar>
-       <ul className="navlinks text-[#fff] mt-[0.75em] font-[400] bg-[#131313] 
-            text-[1em]  ">
+       <ul className="navlinks text-[#fff] font-[400] bg-[#131313]
+            text-[1em] lg:hidden ">
               <li className="navlink">Home </li>
               <li className="navlink">About</li>
               <li className="navlink">Services</li>
