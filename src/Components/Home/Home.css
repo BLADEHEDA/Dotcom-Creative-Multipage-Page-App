@@ -17,6 +17,18 @@
       background-image: url('../images/carousel-3.jpg');
     }
   }
+  /* set the diferent background styles */
+.background1{
+  background-image: url('../images/carousel-1.jpg');
+}
+.background2{
+  background-image: url('../images/carousel-2.jpg');
+}
+.background3{
+  background-image: url('../images/carousel-3.jpg');
+}
+
+
 .image-div{
   border: solid 1px black;  
   background-color: #fff;
