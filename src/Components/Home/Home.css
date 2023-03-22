@@ -3,7 +3,7 @@
      height: 40vh; 
     background-position: center;
     background-size: cover;
-    animation: image 5s infinite alternate;
+    animation: image 20s infinite alternate;
   }
   
   @keyframes image {
@@ -17,17 +17,6 @@
       background-image: url('../images/carousel-3.jpg');
     }
   }
-  /* set the diferent background styles */
-.background1{
-  background-image: url('../images/carousel-1.jpg');
-}
-.background2{
-  background-image: url('../images/carousel-2.jpg');
-}
-.background3{
-  background-image: url('../images/carousel-3.jpg');
-}
-
 
 .image-div{
   border: solid 1px black;  
@@ -106,6 +95,12 @@
     grid-gap: 1em; 
   }
 }
-
-
+}
+@media only screen and (min-width:1024px){
+  .mainbar-div{
+    background-position: center;
+    height: 100vh; 
+    background-position: center;
+    /* background-size: contain; */
+ }
 }

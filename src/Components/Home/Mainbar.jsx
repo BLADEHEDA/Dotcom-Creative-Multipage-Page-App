@@ -28,7 +28,7 @@ const [color2,setColor2]=useState(false)
 const presentColor2= color2?"light":"white";
 
   return (
-    <div className={`mainbar-div pt-[1.5em] px-[1em] flex `}>
+    <div className={`mainbar-div pt-[1.5em] px-[1em] flex lg:pt-[5em] `}>
 <div className="mainbar-left mt-[1.5em] mr-[1em] ">
   <div onClick={() => {
        setColor(true);
