@@ -13,7 +13,6 @@ img{
         font-weight: 600 !important;
         padding:0.5em 0.8em;
         cursor: pointer;
-        /* margin-top:1em; */
     }
     .footer-icon{
         border: solid 1px  #FDAC53 ;
@@ -42,7 +41,7 @@ img{
  border: solid 1px red;
   } */
   .desktopnav-div{
-    border: solid 1px white;
+    /* border: solid 1px white; */
     width: 90vw;
     margin-right: 15em;
   }
