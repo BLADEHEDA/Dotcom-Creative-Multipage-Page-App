@@ -5,10 +5,6 @@
     background-position: center;
     background-size: cover;
     animation: image 20s infinite alternate;
-    /* animation: image 10s infinite ; */
-    /* changes to be removed  */
-    /* animation-name: example; 
-    animation-duration: 5s; */
   }
   
   @keyframes image {
@@ -108,4 +104,15 @@
     background-position: center;
     /* background-size: contain*/
  }
+ .main-name{
+  font-weight: 900;
+  text-shadow: 1px 0px, 1px 0px, 0px 0px;
+ }
+ .main-title {
+  text-shadow: 1.5px 0px, 1px 0px, 0px 0px;
+  /* line-height: 100px; */
+ }
+ /* .mainbar-btn{
+  border: solid 1px white ;
+ } */
 }

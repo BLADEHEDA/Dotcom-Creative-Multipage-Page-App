@@ -6,7 +6,8 @@ import {Data} from "./Data"
 const MainbarProp= (props)=>{
   return (  
     <div className="main-bar-prop">
-    <h1 className="main-title text-white mr-[1em] text-[1.9em] leading-9 font-[800]"> {props.title} </h1>
+    <h1 className="main-title text-white mr-[1em] text-[1.9em] leading-9 font-[800] w-full block
+     lg:text-[4.5em] leading-[80px] font-[900] w-[75%]"> {props.title} </h1>
       </div>
   )
 
@@ -28,32 +29,36 @@ const [color2,setColor2]=useState(false)
 const presentColor2= color2?"light":"white";
 
   return (
-    <div className={`mainbar-div pt-[1.5em] px-[1em] flex lg:pt-[5em] `}>
-<div className="mainbar-left mt-[1.5em] mr-[1em] ">
+    <div className={`mainbar-div pt-[1.5em] px-[1em] flex block lg:pt-[15em]  `}>
+<div className="mainbar-left mt-[1.5em] mr-[1em] lg:mt-[5em] ">
   <div onClick={() => {
        setColor(true);
        setColor1(false);
        setColor2(false);
     changeIndex(0);
-  }} className={`mainbar-dot  h-[1em] w-[1em] rounded-[50%] mt-[1em] ${presentColor}`}></div>
+  }} className={`mainbar-dot  h-[1em] w-[1em] rounded-[50%] mt-[1em] 
+  lg:w-[1.8em] h-[1.8em] mb-[1em]  ${presentColor}`}></div>
   <div   onClick={() => {
      setColor(false);
      setColor1(true);
      setColor2(false);
     changeIndex(1)
-  }}className={`mainbar-dot  h-[1em] w-[1em] rounded-[50%] mt-[1em] ${presentColor1}`}></div>
+  }}className={`mainbar-dot  h-[1em] w-[1em] rounded-[50%] 
+  mt-[1em] lg:w-[1.8em] h-[1.8em] mb-[1em] mt-[1em] ${presentColor1}`}></div>
   <div   onClick={() => {
        setColor(false);
        setColor1(false);
        setColor2(true);
     changeIndex(2)
-  }}className={`mainbar-dot  h-[1em] w-[1em] rounded-[50%] mt-[1em] ${presentColor2}`}></div>
+  }}className={`mainbar-dot  h-[1em] w-[1em] rounded-[50%] mt-[1em] 
+  lg:w-[1.8em] h-[1.8em] mb-[1.75em] mt-[1em] ${presentColor2}`}></div>
 </div>
-<div className="mainbar-right"> 
-<h1 className="main-name text-white text-[1em] mb-2 font-[400] ">CREATIVE AGENCY</h1>
+<div className="mainbar-right ml-[0em] lg:my-0 ml-[10em]" > 
+<h1 className="main-name text-white text-[1em] mb-2 font-[100] lg:text-[1.3em] font-[900] ">CREATIVE AGENCY</h1>
 <div> <MainbarProp title={Data[index].text} /></div>
 
-<div className="mainbar-btn"> <Button style={{marginTop:"1em"}} name="Learn More "/>  </div>
+<div className="mainbar-btn "> <Button style={{marginTop:"1em"}} name="Learn More "/>  </div>
+{/* <div className="mainbar-btn "> <Button style={{marginTop:"1em"}} name="Learn More "/>  </div> */}
 </div>
       
     </div>
