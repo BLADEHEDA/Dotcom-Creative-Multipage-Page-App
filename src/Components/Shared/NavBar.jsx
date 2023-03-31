@@ -54,12 +54,12 @@ const NavBar = () => {
             <section className="desktop-nav flex  py-[0.3em] px-[1em] hidden 
             lg:block absolute    z-[9999] ">
               <article className='desktopnav-div flex justify-between ' >
-            <nav className="desktop -nav-left font-[900] text-[3.3em] pl-[1.3em] text-slate-100  ">
+            <nav className="desktop-nav-left font-[900] text-[3.3em] pl-[1.3em] text-slate-100  ">
              <span className="color-logo  ">D</span>ot<span className="color-logo">C</span>om
           </nav>
           <nav className="desktop-nav-right "> 
           <ul className={`navlinkx text-[#fff] font-[400]  text-[15px] 
-            md:text-[1em] flex `}>
+            md:text-[1em] flex`}>
               <li className="navlink">Home </li>
               <li className="navlink">About</li>
               <li className="navlink">Services</li>

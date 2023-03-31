@@ -37,9 +37,6 @@ img{
     grid-template-columns: auto auto;
     grid-gap: 1em; 
   }
-  /* .footer-one-content{
- border: solid 1px red;
-  } */
   .desktopnav-div{
     /* border: solid 1px white; */
     width: 90vw;
@@ -49,5 +46,9 @@ img{
     padding: 1em 0em 0.75em 1.2em;
     /* background: red; */
     margin-top: 0.5em;
+ 
+}
+.desktop-nav-left {
+    text-shadow: 3px 0px, 3px 0px, 0px 0px;
 }
 }

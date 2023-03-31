@@ -1,9 +1,14 @@
 @media only screen and (min-width:375px){
  .mainbar-div{
      height: 40vh; 
+     background-image: url('../images/carousel-1.jpg');
     background-position: center;
     background-size: cover;
     animation: image 20s infinite alternate;
+    /* animation: image 10s infinite ; */
+    /* changes to be removed  */
+    /* animation-name: example; 
+    animation-duration: 5s; */
   }
   
   @keyframes image {
