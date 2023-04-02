@@ -5,14 +5,14 @@ import "./Home.css"
 
 const Provider = () => {
   return (
-    <main className='Provider mx-[2em] mb-[2em] md:block mx-[2em]  '>
+    <main className='Provider sm:mx-[2em] block mb-[2em] px-5 md:block lg:flex px-[3em]'>
 
-      <section className="provide-div  "> 
-      <div className="image-div mt-[6em] p-[1em] mb-[3em]">
+      <section className="provide-div mr-0 lg:flex-[40%] mr-[1em]  "> 
+      <div className="image-div mt-[6em] p-[1em] mx-[0.5em] mb-[3em]">
          <img src={about} alt="about-img" className="img-content" /> </div>
        </section>
 
-         <section className="provide-div ">
+         <section className="provide-div mt-[0em] ml-0  lg:mt-[9em] ml-5 flex-[60%] ">
          <p className="prov-content bg-[#FDAC53] text-[#fff] text-[15px] w-[7em] mb-[1em] 
          md:text-[13px] ">WHO WE ARE</p>
          <h1 className="provider-head text-[1.7rem] mb-[1em]  font-[900] leading-7
