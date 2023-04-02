@@ -56,7 +56,7 @@ const presentColor2= color2?"light":"white";
 <div className="mainbar-right" > 
 <h1 className="main-name text-white text-[1em] mb-2 font-[400] md:font-[300] 
 md:text-[1.25em] lg:text-[1.3em] ">CREATIVE AGENCY</h1>
-<div className='mainbar-prop-div w-[95%] md:w-full lg:w-[80%]'> <MainbarProp title={Data[index].text} /></div>
+<div className='mainbar-prop-div w-full md:w-[95%]  lg:w-[80%]'> <MainbarProp title={Data[index].text} /></div>
 
 <div className="mainbar-btn md:mt-[1em] "> <Button style={{marginTop:"1em"}} name="Learn More "/>  </div>
 </div>
