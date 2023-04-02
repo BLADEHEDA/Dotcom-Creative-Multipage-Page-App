@@ -20,7 +20,7 @@ const ServicesProp = (props) => {
 
 const Services = () => {
   return (
-    <main className='Services mx-[2em] mt-[7em]'>
+    <main className='Services mx-[2em] mt-[7em]  '>
        <p className="services-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[7em] mb-[1em] ">WHAT WE DO</p>
        <h1 className="services-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7">
        We Offer Creative Services</h1>
