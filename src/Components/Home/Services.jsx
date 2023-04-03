@@ -20,8 +20,8 @@ const ServicesProp = (props) => {
 
 const Services = () => {
   return (
-    <main className='Services mx-[2em] mt-[7em] block lg:flex mx-[3em] '>
-      <section className="services-left lg:flex-[35%] "> 
+    <main className='Services'>
+      <section className="services-left mt-0 lg:flex-[35%] mt-[3.5em] "> 
         <p className="services-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[7em] mb-[1em] ">WHAT WE DO</p>
         <h1 className="services-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7
         lg:text-[2.5em] leading-[1em] ">
@@ -31,22 +31,26 @@ const Services = () => {
           <div className="provider-btn"><Button style={{marginTop:"1em" }} name="Discover More"/>  </div>
         </section>
 
-     <section className="services-courses mt-[2.5em] lg:flex-[65%] ">
+     <section className="services-courses mt-[2.5em] lg:flex-[65%]   ">
      <ServicesProp head="Web Design" 
      content="Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat" 
-      icon={ <FontAwesomeIcon className='h-[3.2em] text-[#FDAC53] bg-[#fff] ' icon={faLaptopCode}/>}
+      icon={ <FontAwesomeIcon className='services-icons 
+       text-[#FDAC53] bg-[#fff] ' icon={faLaptopCode}/>}
       />
        <ServicesProp head="Development" 
        content="Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat" 
-      icon={ <FontAwesomeIcon className='h-[3.2em]  text-[#FDAC53] bg-[#fff] ' icon={faCode}/>}
+      icon={ <FontAwesomeIcon className='services-icons 
+        text-[#FDAC53] bg-[#fff] ' icon={faCode}/>}
       />
        <ServicesProp head="Marketing" 
        content="Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat" 
-      icon={ <FontAwesomeIcon className='h-[3.2em]  text-[#FDAC53] bg-[#fff] ' icon={faEnvelopeOpen}/>}
+      icon={ <FontAwesomeIcon className='services-icons 
+        text-[#FDAC53] bg-[#fff] ' icon={faEnvelopeOpen}/>}
       />
        <ServicesProp head="Strategy" 
        content="Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat" 
-      icon={ <FontAwesomeIcon className='h-[3.2em]  text-[#FDAC53] bg-[#fff] ' icon={faChartLine}/>}
+      icon={ <FontAwesomeIcon className='services-icons 
+       text-[#FDAC53] bg-[#fff] ' icon={faChartLine}/>}
       />
      </section>
       
