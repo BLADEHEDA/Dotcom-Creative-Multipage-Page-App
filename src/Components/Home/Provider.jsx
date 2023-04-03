@@ -5,10 +5,10 @@ import "./Home.css"
 
 const Provider = () => {
   return (
-    <main className='Provider sm:mx-[2em] block mb-[2em] px-5 md:block lg:flex px-[3em]'>
+    <main className='Provider sm:mx-[2em] block mb-[2em] px-5 md:block lg:flex px-[3.5em]'>
 
       <section className="provide-div mr-0 lg:flex-[40%] mr-[1em]  "> 
-      <div className="image-div mt-[6em] p-[1em] mx-[0.5em] mb-[3em]">
+      <div className="image-div mt-[6em] p-[1em] mx-[0.5em] mb-[3em] lg:mb-[1em] ">
          <img src={about} alt="about-img" className="img-content" /> </div>
        </section>
 

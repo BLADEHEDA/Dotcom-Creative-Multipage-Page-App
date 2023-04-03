@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect } from 'react'
 import Button from '../Shared/Button'
 import "./Home.css"
 import {Data} from "./Data"
@@ -15,10 +15,20 @@ const MainbarProp= (props)=>{
 
 const Mainbar = () => {
   // the state for the hero chenging content 
+  // const [currentText, setCurrentText] = useState('');
   const [index, setIndex] = useState(0);
 const changeIndex = (ind)=>{
   setIndex(ind);
 }
+// write the logiv to change the texts automaitcallly after a certain time interval 
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setIndex((index + 1) % Data.length);
+  }, 7000);
+
+  return () => clearTimeout(timer);
+}, [index]);
+
 // change the color of the buttons onclick 
 
 const [color,setColor]=useState(false)

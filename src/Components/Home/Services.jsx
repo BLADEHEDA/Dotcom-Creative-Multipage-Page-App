@@ -20,15 +20,18 @@ const ServicesProp = (props) => {
 
 const Services = () => {
   return (
-    <main className='Services mx-[2em] mt-[7em]'>
-       <p className="services-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[7em] mb-[1em] ">WHAT WE DO</p>
-       <h1 className="services-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7">
-       We Offer Creative Services</h1>
-       <p className="provider-content text-[1.5em] mb-[0.5em] text-[#6c757d] leading-6">Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam,
-        est erat lorem. Est magna sea clita diam tempor elitr </p>
-        <div className="provider-btn"><Button style={{marginTop:"1em" }} name="Discover More"/>  </div>
+    <main className='Services mx-[2em] mt-[7em] block lg:flex mx-[3em] '>
+      <section className="services-left lg:flex-[35%] "> 
+        <p className="services-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[7em] mb-[1em] ">WHAT WE DO</p>
+        <h1 className="services-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7
+        lg:text-[2.5em] leading-[1em] ">
+        We Offer Creative Services</h1>
+        <p className="provider-content text-[1.5em] mb-[0.5em] text-[#6c757d] leading-6">Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam,
+          est erat lorem. Est magna sea clita diam tempor elitr </p>
+          <div className="provider-btn"><Button style={{marginTop:"1em" }} name="Discover More"/>  </div>
+        </section>
 
-     <section className="services-courses mt-[2.5em]  ">
+     <section className="services-courses mt-[2.5em] lg:flex-[65%] ">
      <ServicesProp head="Web Design" 
      content="Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat" 
       icon={ <FontAwesomeIcon className='h-[3.2em] text-[#FDAC53] bg-[#fff] ' icon={faLaptopCode}/>}

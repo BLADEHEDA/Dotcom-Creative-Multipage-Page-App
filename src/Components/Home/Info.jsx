@@ -4,7 +4,7 @@ import { faMapMarkerAlt,faEnvelopeOpen,faPhone } from '@fortawesome/free-solid-s
 
 const InfoProp = (props) => {
     return ( 
-      <div className='InfoProp flex mb-[1em] px-[1.5em] py-[1.5em] md:px-[0.5em] lg:px-[5.5em] text-left '>
+      <div className='InfoProp flex mb-[1em] px-[1.5em] py-[1.5em] md:px-[0.5em] lg:px-[5.5em] '>
         <div className="infoprop-left mt-[0.65em] mr-[1em]"> {props.icon}</div>
         <div className="infoprop-right">
             <p className="content-head text-[#131313] font-[600] text-[1.3em] ">{props.head }</p>
@@ -16,7 +16,7 @@ const InfoProp = (props) => {
 
 const Info = () => {
   return (
-    <div className='Info mx-[2em] mb-[3em] md:flex justify-evenly lg:justify-between mx-[3.5em] '>
+    <div className='Info mx-[2em] mb-[3em] md:flex justify-evenly lg:mx-[3.5em] justify-between '>
       <InfoProp head="Our Office" content="123 Street, New York, USA " 
       icon={ <FontAwesomeIcon className='h-[2em] text-[#FDAC53] bg-[#fff] ' icon={faMapMarkerAlt}/>}
       />
