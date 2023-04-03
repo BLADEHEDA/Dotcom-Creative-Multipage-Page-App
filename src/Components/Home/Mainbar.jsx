@@ -39,8 +39,8 @@ const [color2,setColor2]=useState(false)
 const presentColor2= color2?"light":"white";
 
   return (
-    <div className={`mainbar-div pt-[1.5em] px-[1em] flex md:pt-[7em] lg:pt-[15em] `}>
-<div className="mainbar-left mt-[2.5em] mr-[1em] md:mt-[3.5em] ">
+    <section className={`mainbar-div pt-[1.5em] px-[1em] flex md:pt-[7em] lg:pt-[15em] `}>
+<div className="mainbar-left z-50 mt-[2.5em] mr-[1em] md:mt-[3.5em] ">
   <div onClick={() => {
        setColor(true);
        setColor1(false);
@@ -63,7 +63,7 @@ const presentColor2= color2?"light":"white";
   }}className={`mainbar-dot 
   ${presentColor2}`}></div>
 </div>
-<div className="mainbar-right" > 
+<div className="mainbar-right z-50" > 
 <h1 className="main-name text-white text-[1em] mb-2 font-[400] md:font-[300] 
 md:text-[1.25em] lg:text-[1.3em] ">CREATIVE AGENCY</h1>
 <div className='mainbar-prop-div w-full md:w-[95%]  lg:w-[80%]'> <MainbarProp title={Data[index].text} /></div>
@@ -71,7 +71,7 @@ md:text-[1.25em] lg:text-[1.3em] ">CREATIVE AGENCY</h1>
 <div className="mainbar-btn md:mt-[1em] "> <Button style={{marginTop:"1em"}} name="Learn More "/>  </div>
 </div>
                                
-    </div>
+    </section>
   )
 }
 
