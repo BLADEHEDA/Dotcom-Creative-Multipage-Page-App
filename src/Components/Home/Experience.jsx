@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import Button from '../Shared/Button'
+import CountUp from 'react-countup'
+import ScrollTrigger from 'react-scroll-trigger'
 
 const ExperienceProp = (props) => {
+  const[count,setCount]=useState(false)
   return ( 
+    <ScrollTrigger onEnter={()=>setCount(true) } onExit={()=>setCount(false) }  > 
     <div className='ExperienceProp  my-[2.5em]  text-center '>
           <p className="content-head text-[#131313] font-[600] text-[2.5em] text-[#FDAC53] 
-           md:text-[3em] font-[800] ">
-            {props.figure }</p>
+           md:text-[3em] md:font-[900] lg:text-[4em] ">
+          {/* here is the use of the counterup feature */}
+           {count && <CountUp start={props.start} end={props.end} duration={5} delay={1} />}
+            </p>
+            
           <p className="content-body  mb-[1em] font-[600] text-[1.25em] ">{props.content }</p>
     </div>
+    </ScrollTrigger>
   )  
 }
 
@@ -49,10 +57,10 @@ const Experience = () => {
            </section>
            <section className="experience-right mt-0 lg:flex-[50%] lg:mt-[-3em] "> 
             <section className="figures">
-              <ExperienceProp figure="25" content="Years Expereince" />
-              <ExperienceProp figure="225" content="SKilled Experts" />
-              <ExperienceProp figure="1050" content="Happy Clients" />
-              <ExperienceProp figure="2500" content="Complete Projects" />
+              <ExperienceProp start="0" end="25" content="Years Expereince" />
+              <ExperienceProp start="0" end="225"  content="SKilled Experts" />
+              <ExperienceProp start="0" end="1050" content="Happy Clients" />
+              <ExperienceProp start="0" end="2500" content="Complete Projects" />
             </section>
            </section>
     </main>
