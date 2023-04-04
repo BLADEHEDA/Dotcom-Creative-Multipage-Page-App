@@ -11,7 +11,7 @@ const ExperienceProp = (props) => {
     <ScrollTrigger onEnter={()=>setCount(true) } onExit={()=>setCount(false) }  > 
     <div className='ExperienceProp  my-[2.5em]  text-center '>
           <p className="content-head text-[#131313] font-[600] text-[2.5em] text-[#FDAC53] 
-           md:text-[3em] md:font-[900] lg:text-[4em] ">
+           md:text-[3em] md:font-[900] lg:text-[3.75em] ">
           {/* here is the use of the counterup feature */}
            {count && <CountUp start={props.start} end={props.end} duration={5} delay={1} />}
             </p>

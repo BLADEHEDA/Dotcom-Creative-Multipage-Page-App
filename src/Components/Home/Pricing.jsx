@@ -24,23 +24,24 @@ const PriceProp = (props) => {
 
 const Pricing = () => {
   return (
-    <main className='Pricing mx-[2em] my-[5em] '>
-        <section className="pricing-top  ">
+    <main className='Pricing mx-[2em] my-[5em] lg:flex lg:mx-[5em] '>
+        <section className="pricing-top flex-[60%] lg:mr-[1em] ">
         <PriceProp price="49" type="Basic"   />
-        <PriceProp price="99" type="Premium"   />
+        <PriceProp price="99" type="Premium"/>
         </section>
-      <section className="pricing-botom">
+      <section className="pricing-botom flex-[40%] lg:ml-[1em] ">
       <p className="pricing-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[9em] mb-[1em] 
       md:text-[13px]">OUR PRICING PLAN</p>
       <h1 className="pricing-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7
-      md:text-[2.2em] ">
+      md:text-[2.2em] lg:text-[2.5em] lg:leading-[1.1em] ">
       We Offer Affordable and Flexible Packages</h1>
       <p className="pricing-content text-[1.3em] mb-[1.25em] text-[#6c757d] leading-6
-     md:text-[1.5em] ">
+     md:text-[1.5em] lg:text-[1.75] lg:leading-8 ">
       Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam, est erat lorem. Est magna sea clita diam tempor elitr</p>
-      <h3 className="pricing-head text-[1.25rem] mb-[0.35em] text-[#131313] font-[900] leading-7">
+      <h3 className="pricing-head text-[1.25rem]  mt-0 mb-[0.35em] text-[#131313] font-[900] leading-7
+       lg:font-[300] lg:text-[1.3em] lg:mt-[-0.5em]">
       Need A Custom Package?</h3>
-       <div className="pricing-ntn"><Button style={{marginTop:"1em" }} name="Contact Now"/>  </div>
+       <div className="pricing-ntn "><Button style={{marginTop:"1em" }} name="Contact Now"/>  </div>
       </section>
     </main>
   )
