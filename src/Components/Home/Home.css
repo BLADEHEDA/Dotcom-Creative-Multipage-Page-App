@@ -107,7 +107,6 @@
   height: 8.5em;
   margin-top: -3em;
  }
-
 }
 @media only screen and (min-width:768px){
   .services-courses,.figures,.pricing-top,.blog-second {
@@ -121,6 +120,7 @@
   .Provider{
     margin: 0em 2em 1.5em 2em;
    }
+
 }
 
 
@@ -148,7 +148,7 @@
   margin-bottom: 1em;
   margin-right: 10em;
 }
-.provider-head,.services-head {
+.provider-head,.services-head,.Experience-head  {
   text-shadow: 0.75px 0px, 0.75px 0px, 0px 0px;
 }
 .provide-div {

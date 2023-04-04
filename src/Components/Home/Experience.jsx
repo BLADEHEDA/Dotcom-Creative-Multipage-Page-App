@@ -16,17 +16,19 @@ const ExperienceProp = (props) => {
 
 const Experience = () => {
   return (
-    <main className='Experience mx-[2em] mt-[7em]'>
+    <main className='Experience mx-[2em] mt-[7em] lg:flex lg:mx-[5em]  '>
+      <section className="experience-left  lg:flex-[50%] "> 
           <p className="Experience-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[8em] mb-[1em] 
          md:text-[13px] ">
             WHY CHOOSE US</p>
-          <h1 className="Experience-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7">
+          <h1 className="Experience-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7
+          lg:text-[2.5rem] font-[900] ">
            25 Years Expereince</h1>
-          <p className="Experience-content text-[1.3em] mb-[0.5em] text-[#6c757d] leading-6">
+          <p className="Experience-content text-[1.3em] mb-[0.5em] text-[#6c757d] leading-6 lg:text-[1.5em] ">
             Lorem ut kasd dolores elitr sed est duo ea
            ipsum justo diam, est erat lorem </p>
           
-           <section className="options mt-[1.5em]">
+           <section className="options mt-[1.5em] ">
             <div className="option flex mb-[0.5em] ">
               <div className="option-left">
                 <FontAwesomeIcon className='h-[1em]   text-[#FDAC53] bg-[#fff] ' icon={faAngleRight}/></div>
@@ -42,15 +44,17 @@ const Experience = () => {
                 <FontAwesomeIcon className='h-[1em]  text-[#FDAC53] bg-[#fff] ' icon={faAngleRight}/></div>
               <div className="option-right ml-[0.5em]">Diama ipsum est dolor</div>
             </div>
-           </section>
+            </section>
            <div className="experience-ntn"><Button style={{marginTop:"1em" }} name="Learn More"/>  </div>
-           <section className="figures">
-            <ExperienceProp figure="25" content="Years Expereince" />
-            <ExperienceProp figure="225" content="SKilled Experts" />
-            <ExperienceProp figure="1050" content="Happy Clients" />
-            <ExperienceProp figure="2500" content="Complete Projects" />
            </section>
-          
+           <section className="experience-right mt-0 lg:flex-[50%] lg:mt-[-3em] "> 
+            <section className="figures">
+              <ExperienceProp figure="25" content="Years Expereince" />
+              <ExperienceProp figure="225" content="SKilled Experts" />
+              <ExperienceProp figure="1050" content="Happy Clients" />
+              <ExperienceProp figure="2500" content="Complete Projects" />
+            </section>
+           </section>
     </main>
   )
 }

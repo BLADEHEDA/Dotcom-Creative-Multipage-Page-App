@@ -35,7 +35,7 @@ const Team = () => {
       text-[1.4em] ">
        Eirmod diam magna sed sea rebum, elitr diam dolor lorem ipsum, ipsum stet magna ea diam vero stet vero</p>
        <div className="Team-ntn"><Button style={{marginTop:"1em" }} name="Meet All Experts"/>  </div>
-       <section className="team-pro flex">
+       <section className="team-pro ">
        <TeamProp src={team1} name="John Doe" profession="CEO,Founder" />
        <TeamProp src={team2} name="Kate Wilson" profession="Designer" />
        <TeamProp src={team3} name="John Brown" profession="Designer" />
