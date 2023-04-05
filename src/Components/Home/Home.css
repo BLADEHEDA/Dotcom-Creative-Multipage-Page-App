@@ -1,4 +1,4 @@
-@media only screen and (min-width:375px){
+@media only screen and (min-width:1px){
  .mainbar-div{
      height: 40vh; 
      background-image: url('../images/carousel-1.jpg');
@@ -177,4 +177,43 @@
     height: 7em;
     margin-top: -2em;
    }
+   /* .team-right {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+   }
+   .team-prop{
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    width: 100%;
+    margin-right: 10px;
+    position: relative;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+   }
+   .team-prop:last-child {
+    margin-right: 0;
+  }
+  
+  .team-prop.active {
+    opacity: 1;
+  }
+  
+  .team-prop img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .cteam-prop .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+  } */
 }
