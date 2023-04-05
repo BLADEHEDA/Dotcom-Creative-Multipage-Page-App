@@ -19,6 +19,14 @@ const NavBar = () => {
   const toggleDrop=()=>{
     setShowDrop(!showDrop);
   }
+  //handle the hoveeffect 
+  const [showPage , setshowPage] = useState();
+  const handleshowPage=()=>{
+    setShowDrop(true);
+  }
+  const handleoffshowPage=()=>{
+    setShowDrop(false);
+  }
 
   return (
     <section className='Navvar z-[9999]'>
@@ -64,12 +72,15 @@ const NavBar = () => {
               <li className="navlink">About</li>
               <li className="navlink">Services</li>
               <li className="navlink">Pricing</li>
-              <div onClick={toggleDrop} className="navlink flex">
+            
+              <div onClick={toggleDrop} onMouseEnter={handleshowPage}  onMouseLeave={handleoffshowPage}  className="navlink flex">
                 <ul className="pages-div mr-[2px] ">Pages</ul>
                 <div><FontAwesomeIcon className='h-[1em] text-slate-300' icon={faCaretDown}/> </div> 
                 </div>
-              <div className={`pages-ul bg-[#fff] text-[#4A4A4A] py-[0.75em] pl-[1em] mx-[1em] ${displayDrop} `} > 
-                <li className="navlink-pages">Blog Grid</li>
+              <div onMouseEnter={handleshowPage}  onMouseLeave={handleoffshowPage} 
+                className={`pages-ul bg-[#fff] text-[#4A4A4A] py-[0.75em] absolute 
+               right-[5em] top-[4em]  pl-[1em] pr-[3em] mx-[1em] ${displayDrop} `} > 
+                <li  className="navlink-pages mb-[0.5em]">Blog Grid</li>
                 <li className="navlink-pages">Blog Detail</li>
               </div>
 
