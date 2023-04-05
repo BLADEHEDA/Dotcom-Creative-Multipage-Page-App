@@ -34,8 +34,8 @@ const TestimonialProp =(props)=>{
 
 const Testimonial = () => {
   return (
-    <main className='Testimonial mx-[2em] mb-[4em]  '>
-        <section className="Testimonial-top mb-[3em]">  
+    <main className='Testimonial mx-[2em] mb-[4em] lg:flex '>
+        <section className="Testimonial-top mb-[3em] flex-[50%] ">  
      <p className="Testimonial-prehead bg-[#FDAC53] text-[#fff] text-[15px] w-[9em] mb-[1em] 
      md:text-[13px] ">WHAT CLIENTS SAY</p>
       <h1 className="Testimonial-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7
@@ -52,7 +52,7 @@ const Testimonial = () => {
       <TestimonialProp img={testimonial4}/>
       <TestimonialProp img={testimonial5}/>
         </section> */}
-  <section className="Testimonial-bottom ">   
+  <section className="Testimonial-bottom flex-[50%]  ">   
   <Carousel Carousel  cols={2} rows={1} gap={10} loop >
       <Carousel.Item>
       <TestimonialProp img={testimonial1}/> 
