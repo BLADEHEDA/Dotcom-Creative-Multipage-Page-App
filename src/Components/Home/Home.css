@@ -3,7 +3,8 @@
      height: 40vh; 
      background-image: url('../images/carousel-1.jpg');
      background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
+    background-color: black;
     background-size: cover;
     animation: image 20s infinite ;
   }

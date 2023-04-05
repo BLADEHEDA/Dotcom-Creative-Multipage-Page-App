@@ -39,7 +39,7 @@ const [color2,setColor2]=useState(false)
 const presentColor2= color2?"light":"white";
 
   return (
-    <section className={`mainbar-div pt-[1.5em] px-[1em] flex md:pt-[7em] lg:pt-[15em] `}>
+    <section className={`mainbar-div  pt-[1.5em] px-[1em] flex md:pt-[7em] lg:pt-[15em] `}>
 <div className="mainbar-left z-50 mt-[2.5em] mr-[1em] md:mt-[3.5em] ">
   <div onClick={() => {
        setColor(true);
