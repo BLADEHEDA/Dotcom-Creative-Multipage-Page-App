@@ -33,8 +33,8 @@ const NavBar = () => {
             </button>  
         </nav>
        </navbar>
-       <ul className={`navlinks text-[#fff] font-[400] bg-[#131313] text-[15px] 
-            md:text-[1.1em] lg:hidden ${displayNav}`}>
+       <ul className={`navlinks text-[#fff] font-[400] bg-[#131313] text-[15px]  my-[-0.375em]
+            md:text-[1.1em] md:mt-[-0.5em] lg:hidden ${displayNav}`}>
               <li className="navlink">Home </li>
               <li className="navlink">About</li>
               <li className="navlink">Services</li>
