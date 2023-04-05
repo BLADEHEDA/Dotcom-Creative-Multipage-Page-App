@@ -6,11 +6,10 @@ import team3 from "../images/team-3.jpg"
 import team4 from "../images/team-4.jpg"
 import "./Home.css"
 import TestimonialHover from './TestimonialHover'
-
 // subjected to changes
 import React, { Component } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import Carousel from 'better-react-carousel'
+
 
 
 const TeamProp = (props) => {
@@ -55,12 +54,17 @@ const people =[
     },
   ]
   // subjected to changes 
-  const handleDragStart = (e) => e.preventDefault();
-  const items = [
-    <img src={team1} alt='pics'  onDragStart={handleDragStart} role="presentation" />,
-    <img src={team2} alt='pics'  onDragStart={handleDragStart} role="presentation" />,
-    <img src={team3} alt='pics'  onDragStart={handleDragStart} role="presentation" />,
-  ];
+  const MyDot = ({ isActive }) => (
+    <span
+      style={{
+        display: 'inline-block',
+        height: isActive ? '15px' : '25px',
+        width: isActive ? '18px' : '25px',
+        background: '#1890ff'
+      }}
+    ></span>
+  )
+
   return (
     <main className='Team-main- '>
         <main className='Team mx-[2em] my-[5em] lg:flex lg:mx-[5em]  '> 
@@ -91,24 +95,24 @@ const people =[
         })
         
         } */}
-
- {/* below is a sample implementation for the react multicarouselslider  */}
- <section className="mobile-carousel mt-[2wm] md:hidden">  
-       <Carousel className='Team-mobile  '
-        showArrows={false}
-         infiniteLoop={true}
-         showThumbs={false}
-         showStatus={false}
-         autoPlay={true}
-         interval={6100}
-       >
-         <TeamProp src={people[0].src} name={people[0].name} profession= {people[0].profession}/>  
-          <TeamProp src={people[1].src}name={people[1].name} profession= {people[1].profession}/> 
-         <TeamProp src={people[2].src} name={people[2].name} profession= {people[2].profession}/> 
-        <TeamProp src={people[3].src} name={people[3].name} profession= {people[3].profession}/>      
-      </Carousel>;
-      </section>
-
+{/* Rrying out better carousel  */}
+{/* <section className="tablet-carouel "> */}
+   <section className="team-right  flex-[65%] lg:flex lg:mt-[-5em] ">
+<Carousel  cols={2} rows={1} gap={10} loop >
+      <Carousel.Item>
+      <TeamProp src={people[0].src} name={people[0].name} profession= {people[0].profession}/>  
+      </Carousel.Item>
+      <Carousel.Item>
+      <TeamProp src={people[1].src}name={people[1].name} profession= {people[1].profession}/>
+      </Carousel.Item>
+      <Carousel.Item>
+      <TeamProp src={people[2].src} name={people[2].name} profession= {people[2].profession}/> 
+      </Carousel.Item>
+      <Carousel.Item>
+      <TeamProp src={people[3].src} name={people[3].name} profession= {people[3].profession}/> 
+      </Carousel.Item>
+    </Carousel>
+   </section>
    </main> 
     </main>
   )

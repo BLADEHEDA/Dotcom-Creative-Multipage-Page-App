@@ -1,6 +1,9 @@
 import React from 'react'
 import Button from '../Shared/Button'
 import "./Home.css"
+// subjected to changes
+// import React, { Component } from "react";
+import Carousel from 'better-react-carousel'
 
 import testimonial1 from "../images/testimonial-1.jpg"
 import testimonial2 from "../images/testimonial-2.jpg"
@@ -42,14 +45,32 @@ const Testimonial = () => {
       Lorem ut kasd elitr sed est duo ea ipsum justo diam, est erat lorem clita diam elitr</p>
        <div className="Testimonial-ntn"><Button style={{marginTop:"1em" }} name="Submit Review"/>  </div>
        </section>
-       <section className="Testimonial-bottom "> 
+       {/* <section className="Testimonial-bottom "> 
       <TestimonialProp img={testimonial1}/>
       <TestimonialProp img={testimonial2}/>
       <TestimonialProp img={testimonial3}/>
       <TestimonialProp img={testimonial4}/>
       <TestimonialProp img={testimonial5}/>
-        </section>
-
+        </section> */}
+  <section className="Testimonial-bottom ">   
+  <Carousel Carousel  cols={2} rows={1} gap={10} loop >
+      <Carousel.Item>
+      <TestimonialProp img={testimonial1}/> 
+      </Carousel.Item>
+      <Carousel.Item>
+      <TestimonialProp img={testimonial2}/>
+      </Carousel.Item>
+      <Carousel.Item>
+      <TestimonialProp img={testimonial3}/>
+      </Carousel.Item>
+      <Carousel.Item>
+      <TestimonialProp img={testimonial4}/>
+      </Carousel.Item>
+      <Carousel.Item>
+      <TestimonialProp img={testimonial5}/>
+      </Carousel.Item>
+    </Carousel>
+    </section> 
 
     </main>
   )
