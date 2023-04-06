@@ -15,8 +15,8 @@ const Queries = () => {
            md:text-[2rem]   lg:text-[2.5rem] font-[900] ">
           Contact For Any Queries</h1>
           </div>
-          <section className="section queries md:flex ">
-          <article className='Info mx-[2em] mb-[3em] flex-[40%]  lg:mx-[4.5em] '>
+          <section className="section queries mx-[2em] md:flex lg:mx-[4.5em] ">
+          <article className='Info md:mr-[2em] mb-[3em] flex-[40%]  '>
             <InfoProp head="Our Office" content="123 Street, New York, USA " 
             icon={ <FontAwesomeIcon className='h-[2em] text-[#FDAC53] bg-[#fff] ' icon={faMapMarkerAlt}/>}
             />
@@ -25,12 +25,12 @@ const Queries = () => {
             <InfoProp head="Call us" content="+012 345 6789"
                 icon={ <FontAwesomeIcon className='h-[2em] text-[#FDAC53] bg-[#fff] ' icon={faPhone}/>} />  
     </article>
-      <article className="query-form mx-[2em] mb-[5em] md:ml-0 flex-[60%] mt-[-2em] md:mt-[0em]  lg:mx-[4.5em] ">
+      <article className="query-form  mb-[5em] md:ml-0 flex-[60%] mt-[-2em] md:mt-[0em]   ">
         <section className="section-forms md:flex "> 
-            <div className="form-div">
+            <div className="form-div flex-[50%] md:mr-[0.25em]  ">
             <input type="text" className="form-input" placeholder='Your Nmae' />    
             </div>
-            <div className="form-div">
+            <div className="form-div flex-[50%] md:ml-[0.25em] ">
             <input type="text" className="form-input" placeholder='Your Email'  />
             </div>
         </section> 
