@@ -9,20 +9,39 @@
        background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../images/header.jpg');
        /* filter: brightness(50%); */
      }
-     .mainprop-title,.serve-head{
+     .mainprop-title,.serve-head,.Experience-head {
         text-shadow: 0.75px 0px, 0.75px 0px, 0px 0px;
      }
      .serve-icons {
     font-size: 8.5em;
     margin-top: -0.35em;
      }
+     .form-input{
+      border: 1px solid #ced4da;
+      padding: 0.75rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #495057;
+      width: 100%;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      margin-bottom: 1em;
+     }
+     .form-input:focus{
+      color: #495057;
+      background-color: #fff;
+      border-color: #fee9d1;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgb(253 172 83 / 25%);
+  }
+
     }
 
      @media only screen and (min-width:768px){
         .Mainbar-divx{
             height: 30vh; 
          }
-         .serve-courses {
+         .serve-courses,.package-top {
             display: grid;
             grid-template-columns: auto auto auto;
             grid-gap: 1em;

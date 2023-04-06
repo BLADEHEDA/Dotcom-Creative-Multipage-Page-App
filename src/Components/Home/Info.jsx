@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt,faEnvelopeOpen,faPhone } from '@fortawesome/free-solid-svg-icons'
 
-const InfoProp = (props) => {
+export const InfoProp = (props) => {
     return ( 
       <div className='InfoProp flex mb-[1em] px-[1.5em] py-[1.5em] md:px-[0.5em] lg:px-[5.25em] '>
         <div className="infoprop-left mt-[0.65em] mr-[1em]"> {props.icon}</div>

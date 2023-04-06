@@ -21,7 +21,7 @@ const Package = () => {
        <div className="pricing-ntn "><Button style={{marginTop:"1em" }} name="Contact Now"/>  </div>
       </section>
       </section>
-      <section className="package-top  mt-[2em] lg:mr-[1em]  ">
+      <section className="package-top  mt-[2em] lg:mr-[1em] md:mb-[-2em] ">
         <PriceProp price="49" type="Basic"   />
         <PriceProp price="99" type="Premium"/>
         <PriceProp price="149" type="Business"/>
