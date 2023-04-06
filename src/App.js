@@ -6,13 +6,15 @@ import NavBar from './Components/Shared/NavBar';
 import Home from './Components/Home/Home';
 import Footer from './Components/Shared/Footer';
 import About from './Components/About/About';
+import Service from './Components/Services/Service';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
       {/* <Home/> */}
-      <About/>
+      {/* <About/> */}
+      <Service/>
       <Footer/>
     </div>
   );

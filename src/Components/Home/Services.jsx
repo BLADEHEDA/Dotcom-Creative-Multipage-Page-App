@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode,faCode,faEnvelopeOpen,faChartLine} from '@fortawesome/free-solid-svg-icons'
 import Button from '../Shared/Button'
 
-const ServicesProp = (props) => {
+export const ServicesProp = (props) => {
     return (
       <div className='ServicesProp mb-[2.5em]'>
               <div className='ServicesProp flex  '>
