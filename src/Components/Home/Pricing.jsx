@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../Shared/Button'
 
-const PriceProp = (props) => {
+export  const PriceProp = (props) => {
     return (
       <main className='PriceProp text-center pb-[2em] mb-[3em]'>
         <section className="price-div bg-[#FDAC53] pt-[0.65em]  pb-[0.75em] ">

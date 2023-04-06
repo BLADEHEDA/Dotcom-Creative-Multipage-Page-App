@@ -29,7 +29,7 @@ const NavBar = () => {
   }
 
   return (
-    <section className='Navbar z-[9999]'>
+    <section className='Navbar'>
         <navbar className=" mobile-nav flex justify-between bg-[#131313] py-[0.3em] px-[1em] lg:hidden">  
         <nav className="mobile-nav-left font-[900] text-[2.1em] text-slate-100">
              <span className="color-logo  ">D</span>ot<span className="color-logo">C</span>om
@@ -41,7 +41,7 @@ const NavBar = () => {
             </button>  
         </nav>
        </navbar>
-       <ul className={`navlinks text-[#fff] font-[400] bg-[#131313] text-[15px]  my-[-0.375em]
+       <ul className={`navlinks text-[#fff] font-[400] bg-[#131313] text-[15px]  my-[-0.375em] z-[9999]
             md:text-[1.1em] md:mt-[-0.5em] lg:hidden ${displayNav}`}>
               <li className="navlink">Home </li>
               <li className="navlink">About</li>
@@ -60,7 +60,7 @@ const NavBar = () => {
             </ul> 
 
             <section className="desktop-nav flex  py-[0.3em] px-[1em] hidden 
-            lg:block absolute    z-[9999] ">
+            lg:block absolute    z-[999] ">
               <article className='desktopnav-div flex justify-between ' >
             <nav className="desktop-nav-left font-[900] text-[3.3em] pl-[1.3em] text-slate-100  ">
              <span className="color-logo  ">D</span>ot<span className="color-logo">C</span>om

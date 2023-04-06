@@ -7,7 +7,7 @@ import { faLaptopCode,faCode,faEnvelopeOpen,faChartLine,faSearch, faPen} from '@
 const Serve = () => {
   return (
     <div className='Serve mx-[2em] lg:mx-[5em] '>
-        <section className="serve-left text-center mt-[7em] lg:mt-[3.5em] mb-[3em] "> 
+        <section className="serve-left text-center mt-[5em] lg:mt-[3.5em] mb-[3em] "> 
         <p className="serve-prehead bg-[#FDAC53] text-[#fff] m-[auto]  text-[14px] w-[7em] mb-[1em] ">WHAT WE DO</p>
         <h1 className="serve-head text-[1.7rem] mb-[0.75em] text-[#131313] font-[900] leading-7
         lg:text-[2.5em] leading-[1em] ">
