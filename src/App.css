@@ -52,8 +52,12 @@ img{
   .navlink{
     padding: 1em 0em 0.75em 1.2em;
     margin-top: 0.5em;
- 
+    cursor: pointer;
 }
+.navlink:active{
+    color: red;
+}
+
 .desktop-nav-left {
     text-shadow: 3px 0px, 3px 0px, 0px 0px;
 }
