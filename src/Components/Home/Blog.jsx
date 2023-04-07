@@ -9,9 +9,9 @@ import {faBookBookmark} from '@fortawesome/free-solid-svg-icons'
 
 
 
-const BlogProp=(props)=>{
+export const BlogProp=(props)=>{
     return(
-        <main className="Blogprop mb-[3em]">
+        <main className="Blogprop mb-[2em]">
             <section className="blogprop-first relative">
                <div className="blog-pic-div">
                <img src={props.src }alt="Blog-image" className="Blog-picdiv" />
