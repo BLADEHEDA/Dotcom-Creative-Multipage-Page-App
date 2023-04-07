@@ -9,6 +9,7 @@ import About from './Components/About/About';
 import Service from './Components/Services/Service';
 import Price from './Components/Pricing/Price';
 import Contact from './Components/Contact/Contact';
+import BlogGrid from './Components/Blog/BlogGrid';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <About/> */}
       {/* <Service/> */}
       {/* <Price/> */}
-      <Contact/>
+      {/* <Contact/> */}
+      <BlogGrid/>
       <Footer/>
     </div>
   );
