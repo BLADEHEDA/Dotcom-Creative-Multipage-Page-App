@@ -30,13 +30,13 @@ const NavBar = () => {
 
   return (
     <section className='Navbar'>
-        <navbar className=" mobile-nav flex justify-between bg-[#131313] py-[0.3em] px-[1em] lg:hidden">  
-        <nav className="mobile-nav-left font-[900] text-[2.1em] text-slate-100">
+        <navbar className=" mobile-nav flex justify-between bg-[#131313] py-[0.3em] px-[1em] lg:hidden md:px-[1.2em] ">  
+        <nav className="mobile-nav-left font-[900] text-[2.1em] text-slate-100 md:text-[2.7em] ">
              <span className="color-logo  ">D</span>ot<span className="color-logo">C</span>om
           </nav>
 
         <nav className="mobile-nav-right">
-           <button onClick={toggleNav} className="nav hamburger-menu  mt-[12px] ">
+           <button onClick={toggleNav} className="nav hamburger-menu  mt-[12px] md:mt-[20px] ">
             <FontAwesomeIcon className='h-[1.75em] text-slate-300' icon={faBars }/>
             </button>  
         </nav>

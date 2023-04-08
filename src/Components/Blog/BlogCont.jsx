@@ -22,10 +22,11 @@ const BlogCategories=(props)=>{
 const BlogPosrs=(props)=>{
   return(
     <main className="post-maindiv mb-[0.85em]"> 
-<section className="post-div flex w-full md:w-[75%] ">
-  <div className="post-div-left flex-[25%] md:flex-[20%] "><img src={props.src} alt={props.name} className='h-full' /> </div>
-  <div className="post-div-right flex-[75%] text-[1.1em] py-[0.75em] pr-[1em] pl-[1em] md:flex-[80%] "> 
-  <a href="/"> {props.content} </a></div>
+<section className="post-div flex w-full md:w-[75%] lg:w-full ">
+  <div className="post-div-left flex-[25%] md:flex-[20%] lg:flex-[25%] ">
+    <img src={props.src} alt={props.name} className='h-full' /> </div>
+  <div className="post-div-right flex-[75%] text-[1.1em] py-[0.75em] pr-[1em] pl-[1em] md:flex-[80%] lg:flex-[75%] "> 
+  <a href="/" className='post-link' > {props.content} </a></div>
 </section>
     </main>
   )
@@ -47,9 +48,10 @@ const Cloud=(props)=>{
 
 const BlogCont = () => {
   return (
-    <main className='BlogCont mx-[1em] mt-[5em] md:mx-[2.5em] md:mt-[7em] '>
-      <section className="BlogCont-left">
-        <div className="Blogcont-top">
+    <main className='BlogCont mx-[1em] mt-[5em] md:mx-[2.5em] md:mt-[7em] block 
+    lg:mx-[5em] lg:flex '>
+      <section className="BlogCont-left lg:flex-[65%] mr-[0.75em] ">
+        <div className="Blogcont-top ">
         <BlogProp src={blog1}/>
         <BlogProp src={blog2}/>
         <BlogProp src={blog1}/>
@@ -65,7 +67,7 @@ const BlogCont = () => {
             </ul>
         </div>
       </section>
-      <section className="BlogCont-right">
+      <section className="BlogCont-right lg:flex-[35%] ml-[0.75em]   ">
       <article className="Blogcont-search flex mb-[1em] md:mb-[2em] ">
         <div className="serch-div flex-[87%]  ">
            <input type="text" placeholder='Keyword' className="search-blog py-[0.4em] pl-[0.5em] w-full " /></div>
@@ -92,22 +94,22 @@ const BlogCont = () => {
       <div className="blog-image  ">
       <Image src={blog1} />
       </div>
-        <aricle className="blogcloud-div mb-[1em] md:hidden ">  
+        <aricle className="blogcloud-div mb-[1em] md:hidden  lg:block ">  
           <h1 className="blogcloud-head text-[1.5em] font-[400] mt-[2em]  ">Tag Cloud</h1>
               <div className="blog-cloud-div">  
-            <div className="Blog-Clouud mt-[0.5em] flex md:block">
+            <div className="Blog-Clouud mt-[0.5em] flex  ">
             <Cloud content="Design" />
             <Cloud content="Development" />
             <Cloud content="Marketing" />
             </div>
-              <div className="Blog-Clouud mb-[2.5em] mt-[0.5em] flex md:block">
+              <div className="Blog-Clouud mb-[2.5em] mt-[0.5em] flex ">
               <Cloud content="SEO" />
               <Cloud content="Writing" />
               <Cloud content="Consulting" />
               </div>
               </div>
           </aricle>
-          <aricle className="blogcloud-div hidden mb-[2em] md:block ">  
+          <aricle className="blogcloud-div hidden mb-[2em] md:block lg:hidden ">  
           <h1 className="blogcloud-head text-[1.5em] font-[400] mt-[2em] mb-[1em] ">Tag Cloud</h1>
               <div className="blog-cloud-div md:flex">          
             <Cloud content="Design" />
@@ -127,7 +129,6 @@ const BlogCont = () => {
         aliquyam dolor et. Et no consetetur eos labore ea erat voluptua et. Et aliquyam dolore sed erat. 
         Magna sanctus sed eos tempor rebum dolor, tempor clita sit et elitr eirmod.</p>
         </article>
-
       </section>
 
     </main>
