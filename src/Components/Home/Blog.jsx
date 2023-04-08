@@ -11,7 +11,7 @@ import {faBookBookmark} from '@fortawesome/free-solid-svg-icons'
 
 export const BlogProp=(props)=>{
     return(
-        <main className="Blogprop mb-[2em]">
+        <main className="Blogprop mb-[2em]  ">
             <section className="blogprop-first relative">
                <div className="blog-pic-div">
                <img src={props.src }alt="Blog-image" className="Blog-picdiv" />
@@ -22,14 +22,14 @@ export const BlogProp=(props)=>{
                 </div>
             </section>
             <section className="blogprop-section px-[2em] mt-[1.5em] ">
-                <div className="blogprop-flexed flex justify-between mb-[1em] ">
-                    <div className="blogprop-item w-[15%]">
+                <div className="blogprop-flexed flex justify-between mb-[1em] md:justify-start ">
+                    <div className="blogprop-item w-[15%] md:w-[7%] mr-0  md:mr-[1em] ">
                         <img src={user1} alt="user-img " className="blogprop-icon rounded-[50%] " />
                     </div>
-                    <div className="blogprop-item mt-[.5em]"> 
+                    <div className="blogprop-item mt-[.5em] mr-0 md:mr-[1em]"> 
                    <a href="/"><li className="blogprop-link list-none text-[#6c757d]">John Doe</li></a> 
                     </div>
-                    <div className="blogprop-item mt-[.5em]">
+                    <div className="blogprop-item mt-[.5em] mr-0 md:mr-[1em]">
                     <FontAwesomeIcon className='h-[1.5em]  text-[#FDAC53] bg-[#fff] ' icon={faBookBookmark}/>
                     </div>
                     <div className="blogprop-item mt-[.5em]">
