@@ -9,7 +9,7 @@
        background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../images/header.jpg');
        /* filter: brightness(50%); */
      }
-     .mainprop-title,.serve-head,.Experience-head,.blogservices-head {
+     .mainprop-title,.serve-head,.Experience-head,.blogservices-head,.blogcloud-head {
         text-shadow: 0.75px 0px, 0.75px 0px, 0px 0px;
      }
      .serve-icons {
@@ -46,9 +46,24 @@
    font-size: 1.2em;     
     /* font-weight: 400; */
   }
-  .category-div,.post-div{
+  .category-div,.post-div,.image0div,.plain-text-div{
    border: 1px solid rgb(206, 212, 218);
   }
+  .cloud-div {
+   border: 1px solid #FDAC53;
+   cursor: pointer;
+  }
+  .Blog-Clouud{
+   display: grid;
+
+  }
+  .cloud-div:hover{
+   background: #FDAC53;;
+   color: black;
+  }
+  /* .blog-image {
+   border: solid 1px black;
+  } */
 
     }
 

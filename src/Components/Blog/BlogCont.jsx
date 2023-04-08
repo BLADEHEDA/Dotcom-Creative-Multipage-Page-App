@@ -29,6 +29,20 @@ const BlogPosrs=(props)=>{
     </main>
   )
 }
+const Image=(props)=>{
+  return(
+<main className="image-maindiv  "> 
+  <section className="image0div p-[1em]"><img src={props.src} alt={props.name} /> </section>
+</main>
+  )
+}
+const Cloud=(props)=>{
+  return(
+    <main className='cloud-div text-[#FDAC53] px-[0.75em] py-[0.25em] mx-[0.25em] mb-[0.5em] ' >
+      <a href="/" className='text-[1em] '> {props.content}</a> 
+    </main>
+  )
+}
 
 const BlogCont = () => {
   return (
@@ -74,6 +88,32 @@ const BlogCont = () => {
         <BlogPosrs src={blog2} content="Lorem ipsum dolor sit amet consec adipis elit" />
         <BlogPosrs src={blog1} content="Lorem ipsum dolor sit amet consec adipis elit" />
       </article>
+      <div className="blog-image  ">
+      <Image src={blog1} />
+      </div>
+        <aricle className="blogcloud-div  ">  
+          <h1 className="blogcloud-head text-[1.5em] font-[400] mt-[2em] mb-[1em] ">Tag Cloud</h1>
+        
+            <div className="Blog-Clouud mt-[0.5em] flex">
+            <Cloud content="Design" />
+            <Cloud content="Development" />
+            <Cloud content="Marketing" />
+            </div>
+              <div className="Blog-Clouud mb-[2.5em] mt-[0.5em] flex">
+              <Cloud content="SEO" />
+              <Cloud content="Writing" />
+              <Cloud content="Consulting" />
+              </div>
+          </aricle>
+          <article className="blog-imag  mb-[2.5em] ">
+        <Image src={blog2} />
+        </article>
+        <article className="plain-text mb-[5em]">
+        <h1 className="blogcloud-head text-[1.5em] font-[400] mt-[2em] mb-[1em] ">Plain Text</h1>
+        <p className="plain-text-div p-[1em] text-[#4A4A4A] text-[1em] leading-2  ">Aliquyam sed lorem stet diam dolor sed ut sit. Ut sanctus erat ea est 
+        aliquyam dolor et. Et no consetetur eos labore ea erat voluptua et. Et aliquyam dolore sed erat. 
+        Magna sanctus sed eos tempor rebum dolor, tempor clita sit et elitr eirmod.</p>
+        </article>
 
       </section>
 
