@@ -9,7 +9,7 @@
        background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../images/header.jpg');
        /* filter: brightness(50%); */
      }
-     .mainprop-title,.serve-head,.Experience-head {
+     .mainprop-title,.serve-head,.Experience-head,.blogservices-head {
         text-shadow: 0.75px 0px, 0.75px 0px, 0px 0px;
      }
      .serve-icons {
@@ -45,6 +45,9 @@
    border: 1px solid rgb(206, 212, 218);
    font-size: 1.2em;
     /* font-weight: 400; */
+  }
+  .category-div{
+   border: 1px solid rgb(206, 212, 218);
   }
 
     }
