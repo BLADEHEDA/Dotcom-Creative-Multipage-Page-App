@@ -43,10 +43,10 @@
   }
   .serch-div{
    border: 1px solid rgb(206, 212, 218);
-   font-size: 1.2em;
+   font-size: 1.2em;     
     /* font-weight: 400; */
   }
-  .category-div{
+  .category-div,.post-div{
    border: 1px solid rgb(206, 212, 218);
   }
 

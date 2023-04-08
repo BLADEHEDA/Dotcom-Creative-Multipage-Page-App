@@ -21,10 +21,10 @@ const BlogCategories=(props)=>{
 } 
 const BlogPosrs=(props)=>{
   return(
-    <main className="post-maindiv"> 
-<section className="post-div">
-  <div className="post-div-left"><img src={props.src} alt={props.name} /> </div>
-  <div className="post-div-right">{props.content} </div>
+    <main className="post-maindiv mb-[0.85em]"> 
+<section className="post-div flex">
+  <div className="post-div-left flex-[25%]"><img src={props.src} alt={props.name} className='h-full' /> </div>
+  <div className="post-div-right flex-[75%] text-[1.1em] py-[0.75em] pr-[1em] pl-[1em] "> <a href="/"> {props.content} </a></div>
 </section>
     </main>
   )
@@ -66,8 +66,13 @@ const BlogCont = () => {
         <BlogCategories content="Keyword Search" figure="56" />
         <BlogCategories content="Emain Marketing" figure="90" />
         </article>  
-      <article className="blog-posts">
+      <article className="blog-posts mb-[2.5em] ">
         <h1 className="blog-posts-head text-[1.5em] font-[400] mb-[1em] ">Recent Post </h1>
+        <BlogPosrs src={blog1} content="Lorem ipsum dolor sit amet consec adipis elit" />
+        <BlogPosrs src={blog2} content="Lorem ipsum dolor sit amet consec adipis elit" />
+        <BlogPosrs src={blog1} content="Lorem ipsum dolor sit amet consec adipis elit" />
+        <BlogPosrs src={blog2} content="Lorem ipsum dolor sit amet consec adipis elit" />
+        <BlogPosrs src={blog1} content="Lorem ipsum dolor sit amet consec adipis elit" />
       </article>
 
       </section>
