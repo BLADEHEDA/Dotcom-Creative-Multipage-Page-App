@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBookBookmark,faSearch,faAngleRight} from '@fortawesome/free-solid-svg-icons'
 // import { BlogProp } from '../Home/Blog'
 import { BlogCategories, BlogPosrs, Cloud, Image } from './BlogCont'
+import Button from '../Shared/Button'
 
 const Comment=(props)=>{
 return(
@@ -133,6 +134,48 @@ const BlogDet = () => {
         <Comment src={user1} />
         </div>
         </article>
+        <article className="blog-cont-form">
+            <form action="" className="blog-form p-[2.5em] mb-[3em] ">
+                <h1 className="form-head font-[700] text-[1.55em] mb-[1em] "> Leave a comment  </h1>
+                <div className="form-data">
+                    <div>
+                        <label htmlFor="name" className='text-[#4A4A4A]' >Name * </label>
+                    </div>
+                    <div className="form-inputdiv">
+                        <input type="text" className="form-input h-[2.5em] " />
+                    </div>
+                </div>
+                <div className="form-data">
+                <div>
+                        <label htmlFor="Email" className='text-[#4A4A4A]'>Email * </label>
+                    </div>
+                    <div className="form-inputdiv">
+                        <input type="email" className="form-input h-[2.5em]" />
+                    </div>
+                </div>
+                <div className="form-data">
+                     <div>
+                        <label htmlFor="website" className='text-[#4A4A4A]'>Website </label>
+                    </div>
+                    <div className="form-inputdiv">
+                        <input type="text" className="form-input h-[2.5em]" />
+                    </div>
+                </div>
+
+                <div className="form-data">
+                     <div>
+                        <label htmlFor="">Message </label>
+                    </div>
+                    <div className="form-inputdiv">
+                      <textarea name="" id="text-area" cols="30" rows="5" className="form-input" ></textarea>
+                    </div>
+                </div>
+                <div className="form-ntn">
+                    <Button style={{marginTop:"-0.5em", fontSize:"1em" }} name="Leave comment"/>  </div>
+            </form>
+        </article>
+
+
         </div>
         <di className="Blogcont-bottom">
         </di>
