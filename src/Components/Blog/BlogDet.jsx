@@ -57,7 +57,7 @@ const BlogProp=(props)=>{
                     </div>
                 </div>
                 <div className="blogprop-content">
-                  <a className='link-blogprop font-[700] text-[1.55em] leading-6 
+                  <a className='link-blogprop font-[700] text-[1.55em] leading-6  md:text-[1.75em]
                  lg:text-[1.9em]  lg:leading-8 lg:font-[600]' href="/">Kasd tempor diam sea
                    justo dolor kasd amet dolor
                    labore amet clita est diam dolor</a>
@@ -135,7 +135,7 @@ const BlogDet = () => {
         </div>
         </article>
         <article className="blog-cont-form">
-            <form action="" className="blog-form p-[2.5em] mb-[3em] ">
+            <form action="" className="blog-form p-[2.5em] mb-[3em] md:mb-[5em] lg:mb-[7em] ">
                 <h1 className="form-head font-[700] text-[1.55em] mb-[1em] "> Leave a comment  </h1>
                 <div className="form-data">
                     <div>
