@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBookBookmark,faSearch,faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import { BlogProp } from '../Home/Blog'
 
-const BlogCategories=(props)=>{
+export const BlogCategories=(props)=>{
   return(
 <main className='category-div py-[0.65em] px-[1.1em] flex justify-between' >
   <section className="categoru-div-left  flex ">
@@ -19,7 +19,7 @@ const BlogCategories=(props)=>{
 </main>
   )
 } 
-const BlogPosrs=(props)=>{
+export const BlogPosrs=(props)=>{
   return(
     <main className="post-maindiv mb-[0.85em]"> 
 <section className="post-div flex w-full md:w-[75%] lg:w-full ">
@@ -31,14 +31,14 @@ const BlogPosrs=(props)=>{
     </main>
   )
 }
-const Image=(props)=>{
+ export const Image=(props)=>{
   return(
 <main className="image-maindiv  "> 
   <section className="image0div p-[1em]"><img src={props.src} alt={props.name} /> </section>
 </main>
   )
 }
-const Cloud=(props)=>{
+export  const Cloud=(props)=>{
   return(
     <main className='cloud-div text-[#FDAC53] px-[0.75em] py-[0.25em] mx-[0.25em] mb-[0.5em] ' >
       <a href="/" className='text-[1em] '> {props.content}</a> 

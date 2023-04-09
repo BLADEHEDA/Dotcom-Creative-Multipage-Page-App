@@ -86,6 +86,17 @@
   .post-link:hover{
    text-decoration: underline;
   }
+.blogcont2-img{
+   float: left;
+   width: 50%;
+   margin-right: 1em;
+}
+.blogcont2-img2{
+   float: right;
+   width: 50%;
+   margin-leftt: 1em;
+}
+
     }
 
      @media only screen and (min-width:768px){
