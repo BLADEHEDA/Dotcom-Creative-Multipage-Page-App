@@ -112,8 +112,12 @@
             font-size: 7em;
             margin-top: -0.25em;
              }
-             /* .BlogCont-left,.BlogCont-right{
-               border: solid 1px black;
-             } */
 
         }
+        @media only screen and (min-width:1524px){
+         .BlogCont{
+            margin: 0em 10em;
+         }
+
+ 
+         }
