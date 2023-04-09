@@ -7,6 +7,27 @@ import {faBookBookmark,faSearch,faAngleRight} from '@fortawesome/free-solid-svg-
 // import { BlogProp } from '../Home/Blog'
 import { BlogCategories, BlogPosrs, Cloud, Image } from './BlogCont'
 
+const Comment=(props)=>{
+return(
+    <main className="comment-div mb-[1em] ">
+        <div className="comment-img-div">
+            <img src={props.src} alt={props.name} className="comment-div float-left w-[3em] mr-[1em] " />
+        </div>
+        <p className="comment-content1 mb-[0.2em] ">
+            <span className="comment-name text-[1.1em]">John Doe</span>
+            <soan className="comment-detail text-[0.8em]">01 Jan 2045 at 12:00pm</soan>
+        </p>
+        <p className="comment-content text-[1em] pl-[4em] text-[#6c757d]  ">
+        Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore accusam 
+        ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum. 
+        Gubergren clita aliquyam consetetur sadipscing, at tempor amet
+         ipsum diam tempor consetetur at sit.
+        </p>
+        <p className="reoly text-[1em] mt-[0.75em] font-[300] pl-[4em] ">Reply</p> 
+    </main>
+)
+}
+
 const BlogProp=(props)=>{
     return(
         <main className="Blogprop1 mb-[2em]  ">
@@ -105,6 +126,13 @@ const BlogDet = () => {
         2elitr aliquyam takimata sea kasd dolores
          diam, amet et est accusam labore eirmod vero et voluptua. Amet labore clita duo et no.
         </p>
+        <article className="commetn">
+        <Comment src={user1} />
+        <Comment src={user1} />
+        <div className="comment-shift pl-[4em] ">
+        <Comment src={user1} />
+        </div>
+        </article>
         </div>
         <di className="Blogcont-bottom">
         </di>
