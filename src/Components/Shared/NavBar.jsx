@@ -29,6 +29,7 @@ const NavBar = () => {
     setShowDrop(false);
   }
 
+
   return (
     <section className='Navbar'>
 
@@ -86,7 +87,7 @@ const NavBar = () => {
                 <ul className="pages-div mr-[2px] ">Pages</ul>
                 <div><FontAwesomeIcon className='h-[1em] text-slate-300' icon={faCaretDown}/> </div> 
                 </div>
-              <div onMouseEnter={handleshowPage}  onMouseLeave={handleoffshowPage} 
+              <div onMouseEnter={handleshowPage}  onMouseLeave={handleoffshowPage} onClick={ handleoffshowPage}
                 className={`pages-ul bg-[#fff] text-[#4A4A4A] py-[0.75em] absolute 
                right-[5em] top-[4em]  pl-[1em] pr-[3em] mx-[1em] ${displayDrop} `} > 
               <Link to="Blog" > <li className="navlink-pages">Blog Grid</li></Link>
