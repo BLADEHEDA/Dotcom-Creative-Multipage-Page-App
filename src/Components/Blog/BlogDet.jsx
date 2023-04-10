@@ -11,8 +11,8 @@ import Button from '../Shared/Button'
 const Comment=(props)=>{
 return(
     <main className="comment-div mb-[1em] ">
-        <div className="comment-img-div">
-            <img src={props.src} alt={props.name} className="comment-div float-left w-[3em] mr-[1em] " />
+        <div className="comment-img-div w-[3em] ">
+            <img src={props.src} alt={props.name} className="comment-div float-left h-[1em]   mr-[1em] " />
         </div>
         <p className="comment-content1 mb-[0.2em] ">
             <span className="comment-name text-[1.1em]">John Doe</span>

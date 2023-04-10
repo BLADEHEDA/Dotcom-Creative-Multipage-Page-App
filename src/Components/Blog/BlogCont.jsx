@@ -24,8 +24,8 @@ export const BlogPosrs=(props)=>{
     <main className="post-maindiv mb-[0.85em]"> 
 <section className="post-div flex w-full md:w-[75%] lg:w-full ">
   <div className="post-div-left flex-[25%] md:flex-[20%] lg:flex-[25%] ">
-    <img src={props.src} alt={props.name} className='h-full' /> </div>
-  <div className="post-div-right flex-[75%] text-[1.1em] py-[0.75em] pr-[1em] pl-[1em] md:flex-[80%] lg:flex-[75%] "> 
+    <img src={props.src} alt={props.name} className=' h-full w-full ' /> </div>
+  <div className="post-div-right flex-[75%] text-[1.1em] py-[0.5em] pr-[0.5em] pl-[1em] md:flex-[80%] lg:flex-[75%] "> 
   <a href="/" className='post-link' > {props.content} </a></div>
 </section>
     </main>
