@@ -31,17 +31,9 @@ const NavBar = () => {
 
   return (
     <section className='Navbar'>
-        {/* 
-      <Route path='Services' element={<Service/>} />
-      <Route path='Price' element={<Price/> } />
-      <Route path='Contact' element={<Contact/> } />
-      <Route path='Blog' element={<BlogGrid/>} />
-      <Route path='Blog1' element={<BlogDetails/>} /> */}
-  
- 
-      <Link to="Contact" >  </Link>
+
         <navbar className=" mobile-nav flex justify-between bg-[#131313] py-[0.3em] px-[1em] lg:hidden md:px-[1.2em] ">  
-        <Link to="/" ><nav className="mobile-nav-left font-[900] text-[2.1em] text-slate-100 md:text-[2.7em] ">
+        <Link to="/" ><nav className="mobile-nav-left font-[900] cursor-pointer text-[2.1em] text-slate-100 md:text-[2.7em] ">
              <span className="color-logo  ">D</span>ot<span className="color-logo">C</span>om
           </nav>  
           </Link>   
@@ -77,9 +69,11 @@ const NavBar = () => {
             <section className="desktop-nav flex  py-[0.3em] px-[1em] hidden 
             lg:block absolute    z-[999] ">
               <article className='desktopnav-div flex justify-between ' >
-            <nav className="desktop-nav-left font-[900] text-[3.3em] pl-[1.3em] text-slate-100  ">
+          <Link to="/"> 
+          <nav className="desktop-nav-left cursor-pointer font-[900] text-[3.3em] pl-[1.3em] text-slate-100  ">
              <span className="color-logo  ">D</span>ot<span className="color-logo">C</span>om
           </nav>
+          </Link> 
           <nav className="desktop-nav-right "> 
           <ul className={`navlinkx text-[#fff] font-[400]  text-[15px] 
             md:text-[1em] flex`}>

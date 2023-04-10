@@ -17,10 +17,8 @@ import { BrowserRouter,  Routes,Route,Link} from "react-router-dom";
 function App() {
   return (
     <BrowserRouter className="App">
-     
+       <NavBar/>
       <Routes>   
-     
-      {/* <NavBar/> */}
       <Route path='/' element={<Home/>} />
       <Route path='About' element={<About/>} />
       <Route path='Services' element={<Service/>} />
@@ -29,9 +27,8 @@ function App() {
       <Route path='Blog' element={<BlogGrid/>} />
       <Route path='Blog1' element={<BlogDetails/>} />
       {/* <Route path='About' element={<About/>} /> */}
-      
-      {/* <Footer/> */}
       </Routes>
+        <Footer/>
     </BrowserRouter>
   );
 }

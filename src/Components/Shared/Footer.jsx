@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAngleRight,faMapMarkerAlt,faEnvelopeOpen,faPhone} from '@fortawesome/free-solid-svg-icons'
 import {faFacebookF,faTwitter,faLinkedin,faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { BrowserRouter,  Routes,Route,Link} from "react-router-dom";
 
 const FooterProp=(props)=>{
     return(
@@ -34,9 +35,11 @@ const Footer = () => {
         <section className="footer-top bg-[#131313] pt-[5em] pb-[3em] px-[1em] text-slate-100 
      md:pt-[4em] md:px-[3em] md:pb-[1em] lg:flex ">   
      <footer className="footer-one flex-[25%]">
-        <h1 className="mobile-na font-[900] text-[2.1em] text-slate-100 md:text-[2.7em] ">
+     <Link to="/" >
+     <h1 className="mobile-na font-[900] text-[2.1em] text-slate-100 md:text-[2.7em] ">
                 <span className="color-logo  ">D</span>ot<span className="color-logo">C</span>om
-        </h1>
+        </h1> 
+         </Link>  
     <p className="footer-one-content  md:w-[90%]  ">Volup amet magna clita tempor. Tempor sea eos vero ipsum.
      Lorem lorem sit sed elitr sed kasd et</p>
      <div className="icons-div flex mt-[1em]">
@@ -49,7 +52,7 @@ const Footer = () => {
      <footer className="footer-two mb-[3em] flex-[25%] ">
         <h2 className="footer-head color-logo text-[1.2em] font-[700] mb-[1em] mt-[2em] 
         md:mt-[0em]">Quick Links</h2>
-        <FooterProp text="Home" />l
+        <FooterProp text="Home" />
         <FooterProp text="About Us" />
         <FooterProp text="Services" />
         <FooterProp text="Pricing" />
