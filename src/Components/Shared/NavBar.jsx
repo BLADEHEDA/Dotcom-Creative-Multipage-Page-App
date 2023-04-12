@@ -8,7 +8,7 @@ import { faListAlt } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { BrowserRouter,  Routes,Route,Link} from "react-router-dom";
 const NavBar = () => {
-  // hide and show nav
+  // hide and show nav 
   const[showNav, setShowanav]=useState();
   const displayNav= showNav?"show":"hide";
   const toggleNav=()=>{

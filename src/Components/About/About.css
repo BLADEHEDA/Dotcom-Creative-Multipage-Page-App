@@ -3,7 +3,6 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-   /* overflow: overlay; */
 
 }
 /* the following line hides the scroll bar   */
@@ -80,9 +79,6 @@
    background: #FDAC53;;
    color: black;
   }
-  /* .blog-image {
-   border: solid 1px black;
-  } */
   .post-link:hover{
    text-decoration: underline;
   }
