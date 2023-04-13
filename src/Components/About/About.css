@@ -5,16 +5,7 @@
    padding: 0;
 
 }
-/* the following line hides the scroll bar   */
-/* ::-webkit-scrollbar {
-   width: 1px;
-   background: transparent;
-}
 
-::-webkit-scrollbar-thumb {
-   background: white;
-   border-radius: 2px;
-} */
 @media only screen and (min-width:1px){
     .Mainbar-divx{
         height: 40vh; 
