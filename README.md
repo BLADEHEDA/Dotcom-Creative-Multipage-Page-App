@@ -2,7 +2,9 @@
 link: https://designo-dotcom-app.netlify.app/
 
 
-## Available Scripts
+## Project description 
+This website is a fully responsive website that sells its skill aquisition services service . 
+-At the moment , there is no content on the webiste and the website is not interactive as of now sice it is just the temlate . 
 
 In the project directory, you can run:
 
